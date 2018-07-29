@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <a href="">change</a>
+   <div di='item' class="collapse">
+        contenu
+   </div>
+   <div class='container'>
+       <div class='btn-group'>
+        <button class='btn btn-info'>Action</button>
+        <button class='btn btn-default dropdown-toggle' data-toggle='dropdown'><span class='caret'></span></button>
+        <ul class='dropdown-menu'>
+            <li><a href="#">Dompteurs</a></li>
+            <li><a href="#">Zoos</a></li>
+            <li><a href="#">Chasseur</a></li>
+            <li class='divider'></li>
+            <li><a href="#">Autres Témoignages</a></li>
+        </ul>
+       </div>
+    </div>
+       <div class='btn-group'>
+            <h1 data-toggle='dropdown' data-dismiss='dropdown'><span class='label label-default'>Passer sur moi</span></h1>
+                <ul class='dropdown-menu'>
+                    <li><a href="#">Dompteurs</a></li>
+                    <li><a href="#">Zoos</a></li>
+                    <li><a href="#">Chasseur</a></li>
+                </ul>
+       </div>
+   <script src='../../static/monCV/js/jquery-3.3.1/jquery.js'></script>
+   <script src='../../bootstrap/js/bootstrap.js'></script>
+   <script>
+        $(function() {
+            $('a').click(function() {
+                $('item').collapse('toggle');
+            });
+            $('#item').on('shown.bs.collapse', function() {
+                alert('On ne voit !');
+            });
+
+            $('h1').mouseover(function() {
+                $(this).dropdown('toggle');
+            })
+        });
+   </script>
+</body>
+</html>

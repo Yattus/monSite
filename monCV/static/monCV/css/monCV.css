@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'black_jackregular';
+    src: url('fonts/blackjack-webfont.eot');
+    src: url('fonts/blackjack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/blackjack-webfont.woff2') format('woff2'),
+         url('fonts/blackjack-webfont.woff') format('woff'),
+         url('fonts/blackjack-webfont.ttf') format('truetype'),
+         url('fonts/blackjack-webfont.svg#black_jackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'black_jackregular';
+    background-image: url('../img/background_img.png');
+    /* display: flex; */
+    width: 1340px;
+    height: 1542px;
+}
+
+#blog_page{
+    /* background-color: gray; */
+    width: 1140px;
+    height: 1447px;
+    margin: auto;
+    margin-top: 47px;
+    margin-bottom: 47px;
+    /* border: 3px solid bisque; */
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 1148px;
+    height: 366px;
+}
+
+#photo{
+    /* display: block; */
+    /* background-color: yellow; */
+    /* flex: 1; */
+    /* width: 380px; */
+    line-height: 366px;
+}
+
+#photo img{
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+}
+
+#header2{
+    /* background-color: blue; */
+    width: 760px;
+    height: 366px;
+    display: flex;
+    flex-direction: column;
+}
+
+#nom_icons{
+    height: 122px;
+    display: flex;
+    flex-direction: row;
+}
+
+#blog_nom{
+    background-color: #4f4f4f;
+    width: 640px;
+    height: 122px;
+
+}
+
+#nom{
+    font-family: 'black_jackregular', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: block;
+    width: auto;
+    height: auto;
+    color: white;
+    padding: 40px;
+    font-size: 2em;
+
+}
+
+#blog_icons{
+    background-color: #484848;
+    width: 128px;
+    height: 122px;
+    text-align: center;
+}
+
+#icons{
+    display: block;
+    padding-top: 45px;
+}
+#professions_icons_telecharge{
+    background-color: magenta;
+    height: 122px;
+    display: flex;
+    flex-direction: row;
+}
+
+#blog_profession{
+    background-color: #494949;
+    width: 640px;
+    height: 122px;
+}
+
+#profession{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: block;
+    width: auto;
+    height: auto;
+    color: white;
+    padding: 40px;
+    font-size: 2em;
+}
+
+#icons_telechargement{
+    background-color: #3f3f3f;
+    width: 128px;
+    height: 122px;
+    text-align: center;
+    padding-top: 45px;
+}
+
+/* #icons_telechargement{
+    display: block;
+    padding-top: 40%;
+
+} */
+
+#nav{
+    display: flex;
+    flex-direction: row;
+}
+
+#blog_nav1, #blog_nav2, #blog_nav3, #blog_nav4, #blog_nav5, #blog_nav6{
+    display: flex;
+    flex-direction: column;
+    width: 128px;
+    height: 122px;
+    text-align: center;
+}
+
+#blog_nav1{
+    background-color: #1abc9c;
+    justify-content: center;
+
+}
+
+#nav1{
+    display: block;
+    margin-bottom: 10px;
+}
+#home{
+    display: block;
+}
+
+#blog_nav2{
+    background-color: #3498db;
+    justify-content: center;
+}
+
+#nav2{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#blog_nav3{
+    background-color: #9b59b6;
+    justify-content: center;
+}
+
+#nav3{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#blog_nav4{
+    background-color: #e74c3c;
+    justify-content: center;
+}
+
+#nav4{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#blog_nav5{
+    background-color: #d9a81d;
+    justify-content: center;
+}
+
+#nav5{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#blog_nav6{
+    background-color: #e67e22;
+    justify-content: center;
+}
+
+#nav6{
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/* ========= SECTION 1 =========== */
+#section1{
+    background-color: white ;
+     display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 368px;
+    display: flex;
+    flex-direction: row;
+}
+
+#section1 div{
+    width: 759px;
+}
+
+#section1 aside{
+    width: 384px;
+    background-color: #eee;
+}
+
+/* ========= SECTION 2 =========== */
+#section2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 332px;
+}
+
+#employement{
+    width: 380px;
+    background-color: #9b59b6;
+}
+
+#competence{
+    width: 756px;
+    background-color: #3498db;
+}
+
+/* ========= SECTION 3 =========== */
+#section3{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 125px;
+    background-color: #0e6e93;
+
+footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 262px;
+    background-color: #4f4f4f;
+}

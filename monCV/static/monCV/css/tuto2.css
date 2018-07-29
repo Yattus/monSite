@@ -1,0 +1,43 @@
+body{
+    padding-top:15px;
+}
+
+.col-md-12{
+    line-height: 60px;
+}
+.col-md-8, .col-xs-10, .col-sm-10{
+    line-height: 150px;
+}
+
+[class*='col-'], footer{
+    background-color: lightgreen;
+    border: 1px solid black;
+    text-align: center;
+    /* line-height: 70px; */
+    border-radius: 6px;
+}
+
+.container{
+   margin-right: auto;
+   margin-left: auto;
+   padding-right: 15px;
+   padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+
+@media (min-width: 992px){
+    .container{
+        width: 1170px;
+    }
+}

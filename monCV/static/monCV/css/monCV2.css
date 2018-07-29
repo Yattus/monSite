@@ -1,0 +1,285 @@
+@font-face {
+    font-family: 'black_jackregular';
+    src: url('fonts/blackjack-webfont.eot');
+    src: url('fonts/blackjack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/blackjack-webfont.woff2') format('woff2'),
+         url('fonts/blackjack-webfont.woff') format('woff'),
+         url('fonts/blackjack-webfont.ttf') format('truetype'),
+         url('fonts/blackjack-webfont.svg#black_jackregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cac_champagneregular';
+    src: url('fonts/cac_champagne-webfont.eot');
+    src: url('fonts/cac_champagne-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cac_champagne-webfont.woff2') format('woff2'),
+         url('fonts/cac_champagne-webfont.woff') format('woff'),
+         url('fonts/cac_champagne-webfont.ttf') format('truetype'),
+         url('fonts/cac_champagne-webfont.svg#cac_champagneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('fonts/OpenSans-Italic-webfont.eot');
+    src: url('fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Italic-webfont.woff2') format('woff2'),
+         url('fonts/OpenSans-Italic-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Italic-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/OpenSans-Light-webfont.eot');
+    src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Light-webfont.woff2') format('woff2'),
+         url('fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('fonts/Roboto-Light-webfont.eot');
+    src: url('fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Light-webfont.woff2') format('woff2'),
+         url('fonts/Roboto-Light-webfont.woff') format('woff'),
+         url('fonts/Roboto-Light-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    /* font-family: 'open_sanslight', sans-serif, Verdana, "Arial Black", Impact,  Arial, 'cac_champagneregular'; */
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-image: url('../img/background_img.png');
+    /* background-color:  #aed6f1; */
+}
+
+[class*='col-'], footer{
+    border: 1px solid black;
+    text-align: center;
+    background-color: lightgreen;
+    /* line-height: 70px; */
+    border-radius: 6px;
+}
+
+img{
+    height: 360px;
+    width: 100%;
+}
+
+.container{
+   margin-right: auto;
+   margin-left: auto;
+   padding-right: 15px;
+   padding-left: 15px;
+}
+
+
+/* header img{ */
+/*     height: 370px; */
+/*     width: 100%; */
+/* } */
+
+.nom{
+    font-family: 'black_jackregular', 'open_sanslight', 'cac_champagneregular', 'open_sansitalic', sans-serif, Verdana, Arial, "Arial Black", Impact;
+    padding-left: 50px;
+    text-align: left;
+    font-size: 3em;
+    color: white;
+    background-color: #6d6b6b;
+}
+
+/* .jumbotron{ */
+/*     /1* height: 180px; *1/ */
+/*     background-color: #6d6b6b; */
+/* } */
+
+.nom_icon{
+    background-color: #5f5d5d;
+}
+
+.job{
+    /* font-family: 'robotolight', 'open_sanslight'; */
+    padding-left: 50px;
+    text-align: left;
+    font-size: 1.4em;
+    color: white;
+    background-color: #616161;
+}
+
+.job_icon{
+    display: block;
+    background-color:  #474747;
+}
+
+
+.sectionheight1{
+    text-align: left;
+    height: 370px;
+}
+
+.schoolContent1{
+    height: 92px;
+}
+
+.schoolContent{
+    height: 60px;
+}
+
+.aside{
+    height: 60px;
+}
+
+.sectionheight3{
+    height: 130px;
+}
+
+.nav1{
+    background-color:  #1abc9c;
+    /* justify-content: center; */
+}
+
+.nav2{
+    background-color: #3498db;
+}
+
+.nav3{
+    background-color: #9b59b6;
+}
+
+.nav4{
+    background-color: #e74c3c;
+}
+
+.nav5{
+    background-color: #d9a81d;
+}
+
+.nav6{
+    background-color: #e67e22;
+}
+
+.footerheight{
+    height: 262px;
+}
+
+.nav_header2{
+    font-family: Arial, 'open_sanslight';
+    height: 120px;
+    display: block;
+    padding-top: 35px;
+    color: white;
+}
+
+.header2{
+    line-height: 120px;
+    color: white;
+}
+
+/* Address : Personnal Infos */
+.personnal_infos{
+    background-color: #eee;
+}
+
+.infos {
+    font-family: Arial, 'open_sanslight';
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+.infosContent{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.titre {
+    display: inline-block;
+    padding-left: 20px;
+    width: 150px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+#addr {
+    height: 10px;
+}
+
+/* Background section service */
+.section1{
+    background-color:  #aed6f1;
+}
+
+/* My service */
+.serviceContent{
+    height: 185px;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.my_services{
+    padding-top: 40px;
+    padding-left: 15px;
+    font-size: 1.1em;
+}
+
+.my_services strong {
+    font-size: 1.8em;
+}
+
+.my_services2{
+    font-family: 'open_sanslight', 'cac_champagneregular', 'open_sansitalic', sans-serif, Verdana, Arial, "Arial Black", Impact;
+    padding-left: 20px;
+}
+
+.my_schools {
+    background-color: #1abc9c
+}
+
+.my_skills{
+    background-color: #3498db;
+}
+
+.my_framework{
+    background-color:  #2874a6;
+}
+
+footer{
+    background-color:  #252627;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+
+@media (min-width: 992px){
+    .container{
+        width: 1170px;
+    }
+}
