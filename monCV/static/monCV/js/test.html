@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST</title>
+    <style>
+        #cadre{
+            border: 3px solid red;
+            width: 1000px;
+            overflow: hidden;
+            height: 30px;
+        }
+
+        #job {
+            width: 200px;
+            background-color: yellow;
+            overflow: hidden;
+            height: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id='cadre'>
+        <div id='job'>Conetnu partie</div>
+    </div>
+    <!-- <script src='ExperienceAnimation.js'></script> -->
+    <script>
+        $(document).ready(function(){
+            function func(){
+                $("#job").fadeIn().delay(2500).fadeOut().delay(500);
+                setTimeout(func, 500);
+            };
+            func();
+        });
+    </script>
+</body>
+</html>

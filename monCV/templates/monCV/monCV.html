@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../../static/monCV/css/monCV2.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
@@ -22,47 +23,56 @@
                     <div class='row'>
                         <div class='col-md-12'>
                             <div class='row'>
-                                <div class='col-md-10 header2 nom'>
-                                    <em style:'width: 100px'>Hi, i'm </em> <span style='color:#85c1e9'>Alex Yattara</span>
+                                <div class='col-md-10 nom'>
+                                    <span>Alex Yattara</span>
                                 </div>
-                                <div class='col-md-2 header2 nom_icon'>ICON</div>
+                                <a href='#' class='col-md-2 nom_icon'>
+                                    <span class="fa fa-shopping-cart fa-lg" ></span>
+                                    <span class='nom_icon_span'></span>
+                                </a>
                             </div>
                         </div>
 
                         <div class='col-md-12'>
                             <div class='row'>
-                                <div class='col-md-10 header2 job'>The experienced Web Developper</div>
-                                <a href="#" class="col-md-2 header2 job_icon">
-                                    <span class="glyphicon glyphicon-download-alt" style='font-size: 1.2em'></span>
+                                <div class='col-md-10 div_job'>
+                                        The experienced <span id='job'>Developper</span>
+                                </div>
+                                <a href="#" class="col-md-2 job_icon">
+                                    <span class="fas fa-download fa-lg"></span>
+                                    <span class='job_icon_span'></span>
                                 </a>
                             </div>
                         </div>
 
                         <div class='col-md-12'>
-                            <div class='row dropdown'>
-                                <ul href='#' class='col-md-2'>
-								<!-- <span class="glyphicon glyphicon-home" style='font-size: 1em'><br><br/>HOME</span> -->
-									<div class='row'>
-                                        <li class='dropdown'>
-                                            <a class='col-md-12 nav_header2 nav1' data-toggle='dropdown'>1</a>
-                                        </li>
-                                    </div>
-                                </ul>
+                            <div class='row'>
+                                <a href='#' class='col-md-2 nav_header2 nav1' data-toggle='dropdown'>
+									<span class="fa fa-home fa-lg icons"></span><br/>HOME
+                                    <span class='nav1_span'> </span>
+                                    <!-- <a class='nav1_a' href='#'>kkkk</a> -->
+                                </a>
                                 <a href='#' class='col-md-2 nav_header2 nav2'>
-                                    <span class="glyphicon glyphicon-cog" style='font-size: 1em'><br/><br/>SERVICES</span>
+                                    <span class="fa fa-cogs fa-lg icons"></span><br/>SERVICES
+                                    <span class='nav2_span'> </span>
+                                    <!-- <i class="fas fa-cogs"></i> -->
                                 </a>
                                 <a href='#' class='col-md-2 nav_header2 nav3'>
-                                    <span class="glyphicon glyphicon-folder-close" style='font-size: 1em'><br/><br/>PORTOFOLIO</span>
+                                    <span class="fa fa-briefcase fa-lg icons" ></span><br/>PORTOFOLIO
+                                    <span class='nav3_span'> </span>
                                 </a>
                                 <a href='#' class='col-md-2 nav_header2 nav4'>
-                                    <span class="glyphicon glyphicon-earphone" style='font-size: 1em'><br/><br/>CONTACTS</span>
+                                    <span class="fa fa-map-marker-alt fa-lg icons" ></span><br/>CONTACTS
+                                    <span class='nav4_span'> </span>
                                 </a>
                                 <a href='#' class='col-md-2 nav_header2 nav5'>
-									<i class="glyphicon glyphicon-briefcase" style='font-size: 1em'><br/><br/>STORE</i>
+									<span class="fa fa-shopping-cart fa-lg icons" ></span><br/>STORE
+                                    <span class='nav5_span'> </span>
                                     <!-- <span class=" glyphicon-glyphicon-briefcase"><br/><br/>STORE</span> -->
                                 </a>
                                 <a href='#' class='col-md-2 nav_header2 nav6'>
-                                    <span class="glyphicon glyphicon-edit" style='font-size: 1em'><br/><br/>BLOG</span>
+                                    <span class="fab fa-blogger-b fa-lg icons" ></span><br/>BLOG
+                                    <span class='nav6_span'> </span>
                                 </a>
                             </div>
                         </div>
@@ -85,8 +95,8 @@
                                     <div class='row'>
                                         <div class='col-md-4 serviceContent'>
                                             <p class='my_services2'>
-                                            <span class='glyphicon glyphicon-scissors' style='font-size: 1.9em' ></span>
-                                            WEB DESIGN <br><br>
+                                            <span class='fa fa-object-group fa-3x' style='color: #B6FF17'></span>
+                                            <strong>WEB DESIGN</strong> <br><br>
                                             Elegant and Clean Resume
                                             theme based on popular
                                             Layers WP page builder
@@ -96,8 +106,8 @@
                                         </div>
                                         <div class='col-md-4 serviceContent'>
                                             <p class='my_services2'>
-                                            <span class='glyphicon glyphicon-scissors' style='font-size: 1.9em' ></span>
-                                            SOCIAL MARKETING<br><br>
+                                            <span class='fab fa-ello fa-3x' style='color: #B6FF17'></span>
+                                            <strong>SOCIAL MARKETING</strong><br><br>
                                             It is possible to create
                                             different styles of the
                                             Portfolio grid: Masonry
@@ -107,8 +117,8 @@
                                         </div>
                                         <div class='col-md-4 serviceContent'>
                                             <p class='my_services2'>
-                                            <span class='glyphicon glyphicon-scissors' style='font-size: 1.9em' ></span>
-                                            ECOMMERCE<br><br>
+                                            <span class='fa fa-shopping-cart fa-3x' style='color: #B6FF17'></span>
+                                            <strong>ECOMMERCE</strong><br><br>
                                             Use all the Gridus theme
                                             Communication features:
                                             online Contact form,
@@ -116,25 +126,35 @@
                                             and Social …
                                             </p>
                                         </div>
+                                        <div class='col-md-12' style='height: 30px'>
+                                            hjk
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class='col-md-4 sectionheight1 personnal_infos'>
-                            <p  class='infos'>
-                                <strong style='font-size: 1.8em'>Personnal Infos</strong>
-                                <p class='infosContent'>
-                                    <p><span class='titre'>Full name:</span> Alassane Yattara</p>
-                                    <p><span class='titre'>Age:</span>  21years</p>
-                                    <p id='addr'><span class='titre'>Address:</span> 2220, Oulfa, Arreda,
-                                        <p style='padding-left: 165px'>Casablanca Marroco</p>
+                        <div class='col-md-4'>
+                            <div class='row personnal_infos'>
+                                <div class='col-md-12 sectionheight1'>
+                                    <p  class='infos'>
+                                        <strong style='font-size: 1.8em'>Personnal Infos</strong>
+                                        <p class='infosContent'>
+                                            <p><span class='titre'>Full name:</span> Alassane Yattara</p>
+                                            <p><span class='titre'>Age:</span>  21years</p>
+                                            <p id='addr'><span class='titre'>Address:</span> 2220, Oulfa, Arreda,
+                                                <p style='padding-left: 165px'>Casablanca Marroco</p>
+                                            </p>
+                                            <p><span class='titre'>Phone:</span>  +212 603 39 08 98</p>
+                                            <p><span class='titre'>Email:</span> yattus50@gmail.com</p>
+                                            <p><span class='titre'>Aviable for:</span> Freelance job</p>
+                                        </p>
                                     </p>
-                                    <p><span class='titre'>Phone:</span>  +212 603 39 08 98</p>
-                                    <p><span class='titre'>Email:</span> yattus50@gmail.com</p>
-                                    <p><span class='titre'>Aviable for:</span> Freelance job</p>
-                                </p>
-                            </p>
+                                </div>
+                                <div class='col-md-12' style='height: 30px'>
+                                    hjk
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -174,6 +194,9 @@
                                         <small class='pull-right'>Web Agency </small>
                                     </p>
                                 </div>
+                                <div class='col-md-12' style='height: 30px'>
+                                    hjk
+                                </div>
                             </div>
                         </div>
                         <div class='col-md-8 my_skills'>
@@ -185,29 +208,29 @@
                                     <div class='row'>
                                         <aside class='col-md-6'>
                                             <div class='row'>
-                                                <div class='col-md-12 aside professionalC'>
-                                                    Web Design<br>
+                                                <div class='col-md-12 aside professionalC1'>
+                                                    <i class="fa fa-object-group"></i> Web Design<br>
                                                     <div class='progress progress-striped'>
                                                         <div class='progress-bar progress-bar-info pweb_design'></div>
                                                     </div>
                                                     <div class='pull-right'>57%</div>
                                                 </div>
-                                                <div class='col-md-12 aside professionalC'>
-                                                   Java Script<br>
+                                                <div class='col-md-12 aside professionalC1'>
+                                                    <i class="fab fa-js"></i> Java Script<br>
                                                     <div class='progress progress-striped'>
                                                         <div class='progress-bar progress-bar-info pjavascript'></div>
                                                     </div>
                                                     <div class='pull-right'>77%</div>
                                                 </div>
-                                                <div class='col-md-12 aside professionalC'>
-                                                  Web Programming<br>
+                                                <div class='col-md-12 aside professionalC1'>
+                                                  <i class="fas fa-laptop-code"></i> Web Programming<br>
                                                     <div class='progress progress-striped'>
                                                         <div class='progress-bar progress-bar-info pweb_prog'></div>
                                                     </div>
                                                     <div class='pull-right'>93%</div>
                                                 </div>
-                                                <div class='col-md-12 aside professionalC'>
-                                                  jQuery<br>
+                                                <div class='col-md-12 aside professionalC1'>
+                                                    <i class="fas fa-file-code"></i> jQuery<br>
                                                     <div class='progress progress-striped'>
                                                         <div class='progress-bar progress-bar-info pjquery'></div>
                                                     </div>
@@ -217,29 +240,29 @@
                                         </aside>
                                         <aside class='col-md-6'>
                                             <div class='row'>
-                                                <div class='col-md-12 aside professionalC'>
-                                                    HTML Coding<br>
+                                                <div class='col-md-12 aside professionalC2'>
+                                                    <i class="fab fa-html5"></i> HTML Coding<br>
                                                     <div class='progress progress-striped'>
                                                         <div class='progress-bar progress-bar-info phtml'></div>
                                                     </div>
                                                     <div class='pull-right'>76%</div>
                                                 </div>
-                                                <div class='col-md-12 aside professionalC'>
-                                                   CSS3 Coding<br>
+                                                <div class='col-md-12 aside professionalC2'>
+                                                    <i class="fab fa-css3"></i> CSS3 Coding<br>
                                                     <div class='progress progress-striped'>
                                                         <div class='progress-bar progress-bar-info pcss'></div>
                                                     </div>
                                                     <div class='pull-right'>64%</div>
                                                 </div>
-                                                <div class='col-md-12 aside professionalC'>
-                                                    Django<br>
+                                                <div class='col-md-12 aside professionalC2'>
+                                                    <i class="fab fa-python"></i><i class="fas fa-server"></i> Django<br>
                                                     <div class='progress progress-striped'>
                                                         <div class='progress-bar progress-bar-info pdjango'></div>
                                                     </div>
                                                     <div class='pull-right'>70%</div>
                                                 </div>
-                                                <div class='col-md-12 aside professionalC'>
-                                                    WordPress<br>
+                                                <div class='col-md-12 aside professionalC2'>
+                                                    <i class="fab fa-wordpress"></i> WordPress<br>
                                                     <div class='progress progress-striped'>
                                                         <div class='progress-bar progress-bar-info pwordpress'></div>
                                                     </div>
@@ -248,6 +271,9 @@
                                             </div>
                                         </aside>
                                     </div>
+                                </div>
+                                <div class='col-md-12' style='height: 30px'>
+                                    hjk
                                 </div>
                             </div>
                         </div>
@@ -293,10 +319,12 @@
                         </div>
                         <div class='col-md-12 footerheight2'>
                             <div class='row'>
-                                <img class='col-md-4' src="../../static/monCV/img/photo.jpg" alt="photo Developper freelance">
-                                <div class='col-md-8 detail'>
+                                <p class='col-md-3 image'><img src="../../static/monCV/img/photo.jpg" alt="photo Developper freelance"></p>
+                                <div class='col-md-9 detail'>
                                     <p>
-                                        QualityWeb Design, Ui/UX Design, Part-time or Fulltime.
+                                        Responsive Design, Front-end, Back-end
+                                        (<span style='color:magenta'>Django</span>),
+                                        and more.
                                     </p>
                                 </div>
                             </div>
@@ -310,11 +338,13 @@
                         </div>
                         <div class='col-md-12 footerheight2'>
                             <p>
-                               	Wikipsum wishful wizards want
-								wands Freren is a Samtgemeinde
-								in the district Emsland in Lower
-								Saxony, Germany. Its seat is in
-								the town Freren.
+                                I'm web developper and programmer
+                                living in Casablanca, morroco,
+                                I make web applications, usually with
+                                <span style='color:magenta'>DJANGO</span>
+                                and create beautiful
+                                and functional website for small
+                                business.
                             </p>
                         </div>
                     </div>
@@ -342,7 +372,28 @@
             </footer>
         </div>
     </div>
-    <script src='../../bootstrap/js/bootstrap.js'></script>
     <script scr='../../static/monCV/js/jquery-3.3.1/jquery.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src='../../bootstrap/js/bootstrap.js'></script>
+    <script>
+        $(function(){
+            var p = 1;
+            var $element = $('#job');
+            function func(){
+                <!-- $element.fadeIn().delay(2500).fadeOut().delay(500); -->
+                setTimeout(function() {
+                    $element.text('Web Developper').fadeIn().delay(2500).fadeOut().delay(500);
+                }, 3000);
+                setTimeout(function() {
+                    $element.text('Web Design').fadeIn().delay(2500).fadeOut().delay(500);
+                }, 6500);
+                setTimeout(function() {
+                    $element.text('Web Programming').fadeIn().delay(2500).fadeOut().delay(500);
+                }, 10500);
+                setTimeout(func,11500);
+            };
+            func();
+        });
+    </script>
 </body>
 </html>
