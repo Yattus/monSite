@@ -214,7 +214,7 @@ header img{
 }
 
 .pweb_design {
-    width: 57%;
+    width: 55%;
 }
 
 .pjavascript {
@@ -231,7 +231,7 @@ header img{
 
 
 .phtml{
-    width: 76%;
+    width: 75%;
 }
 
 .pcss {
@@ -239,11 +239,11 @@ header img{
 }
 
 .pdjango {
-    width: 70%;
+    width: 80%;
 }
 
 .pwordpress {
-    width: 40%;
+    width: 52%;
 }
 
 .progress {
@@ -353,6 +353,34 @@ header img{
 }
 
 
+.dropdown {
+    position: relative;
+    /* display: inline-block; */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #f1f1f1; */
+    /* min-width: 160px; */
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+    left: 0px;
+    top: 120px;
+    /* width: 16%; */
+}
+
+/* .dropdown-content a { */
+/*     color: black; */
+/*     /1* padding: 12px 16px; *1/ */
+/*     text-decoration: none; */
+/*     display: block; */
+/* } */
+
+/* .dropdown-content a:hover {background-color: #ddd;} */
+
+.dropdown:hover .dropdown-content {display: block;}
+
 .nav2{
     background-color: #3498db;
 }
@@ -401,7 +429,7 @@ header img{
     padding-top: 35px;
     color: white;
     text-decoration: none;
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
 }
 
@@ -455,10 +483,12 @@ header img{
 }
 
 .my_services{
-    padding-top: 55px;
+    padding-top: 40px;
     padding-left: 25px;
-    font-size: 1.1em;
+    font-size: 1.3em;
+    color: #666;
 }
+
 
 .my_services strong {
     font-size: 1.8em;
@@ -525,6 +555,57 @@ footer .detail {
     text-align: justify;
     font-size: small;
     height: 175px;
+}
+
+#pointille {
+    font-weight: bold;
+    text-decoration: none;
+    /* background-color: #eee; */
+}
+
+#paS {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #eee;
+}#paS:hover {
+    text-decoration: none;
+    background-color: #ddd;
+}
+
+
+#paI {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #ddd;
+}#paI:hover {
+    text-decoration: none;
+    background-color: #aaa;
+}
+
+
+#paE {
+    display: block;
+    border-radius: 15px;
+    width: 100%;
+    color: white;
+    background-color: #1ab676
+}#paE:hover {
+    text-decoration: none;
+    background-color: #1a7;
+}
+
+
+#paP {
+    display: block;
+    width: 100%;
+    color: white;
+    border-radius: 15px;
+    background-color: #18b;
+}#paP:hover {
+    text-decoration: none;
+    background-color: #16b;
 }
 
 @media (min-width: 768px) {
