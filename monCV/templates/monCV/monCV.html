@@ -36,7 +36,10 @@
                         <div class='col-md-12'>
                             <div class='row'>
                                 <div class='col-md-10 div_job'>
-                                        The experienced <span id='job'>Developper</span>
+                                    <div class='row'>
+                                        <div class='col-md-4' id='experienced'>The experienced</div>
+                                        <div class='col-md-8' id='cadre'><span id='job'>Responsive_Design</span></div>
+                                    </div>
                                 </div>
                                 <a href="#" class="col-md-2 job_icon">
                                     <span class="fas fa-download fa-lg"></span>
@@ -57,23 +60,23 @@
                                     <span class='nav2_span'> </span>
                                     <!-- <i class="fas fa-cogs"></i> -->
                                 </a>
-                                <a href='#' class='col-md-2 nav_header2 nav3'>
+                                <div href='#' class='col-md-2 nav_header2 nav3'>
                                     <span class="fa fa-briefcase fa-lg icons" ></span><br/>PORTOFOLIO
                                     <span class='nav3_span'> </span>
-                                </a>
+                                </div>
                                 <a href='#' class='col-md-2 nav_header2 nav4'>
                                     <span class="fa fa-map-marker-alt fa-lg icons" ></span><br/>CONTACTS
                                     <span class='nav4_span'> </span>
                                 </a>
-                                <a href='#' class='col-md-2 nav_header2 nav5'>
+                                <div href='#' class='col-md-2 nav_header2 nav5'>
 									<span class="fa fa-shopping-cart fa-lg icons" ></span><br/>STORE
                                     <span class='nav5_span'> </span>
                                     <!-- <span class=" glyphicon-glyphicon-briefcase"><br/><br/>STORE</span> -->
-                                </a>
-                                <a href='#' class='col-md-2 nav_header2 nav6'>
+                                </div>
+                                <div href='#' class='col-md-2 nav_header2 nav6'>
                                     <span class="fab fa-blogger-b fa-lg icons" ></span><br/>BLOG
                                     <span class='nav6_span'> </span>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -373,27 +376,7 @@
         </div>
     </div>
     <script scr='../../static/monCV/js/jquery-3.3.1/jquery.js'></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src='../../bootstrap/js/bootstrap.js'></script>
-    <script>
-        $(function(){
-            var p = 1;
-            var $element = $('#job');
-            function func(){
-                <!-- $element.fadeIn().delay(2500).fadeOut().delay(500); -->
-                setTimeout(function() {
-                    $element.text('Web Developper').fadeIn().delay(2500).fadeOut().delay(500);
-                }, 3000);
-                setTimeout(function() {
-                    $element.text('Web Design').fadeIn().delay(2500).fadeOut().delay(500);
-                }, 6500);
-                setTimeout(function() {
-                    $element.text('Web Programming').fadeIn().delay(2500).fadeOut().delay(500);
-                }, 10500);
-                setTimeout(func,11500);
-            };
-            func();
-        });
-    </script>
+    <script src='../../static/monCV/js/ExperienceAnimation.js'></script>
 </body>
 </html>

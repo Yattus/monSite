@@ -120,18 +120,32 @@ header img{
     font-size: 1.6em;
     background-color: #424141;
     line-height: 120px;
-    text-align: left;
-    padding-left: 50px;
     color: white;
 }
 
-/* .experienced{ */
-/*     text-align: right; */
-/*     padding-right: 3px; */
-/* } */
+#experienced{
+    text-align: right;
+    padding-right: 3px;
+}
 
-/* .job{ */
-/* } */
+#cadre{
+    /* border: 3px solid red; */
+    /* width: 1000px; */
+    overflow: hidden;
+    /* height: 30px; */
+    /* text-align: left; */
+    padding-left: 3px;
+}
+
+#job {
+    display: block;
+    width: 250px;
+    text-align: left;
+    margin-top: 45px;
+    overflow: hidden;
+    line-height: 30px;
+    height: 30px;
+}
 
 .job_icon{
     background-color: #393839;
