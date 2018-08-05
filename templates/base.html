@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% block head %}
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "monCV/css/monCV2.css" %}">
+    {% load bootstrap3 %}
+    {% bootstrap_javascript %}
+    {# Display django.contrib.messages as Bootstrap alerts #}
+    {% bootstrap_messages %}
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static "monCV/bootstrap/css/bootstrap.css" %}"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+{% endblock %}
+</head>
+<body>
+    <div class='container'>
+        {% block container %}
+        <div class='col-md-12'>
+            <header class='row'>
+                {% block header %}
+                <div class="col-md-4" >
+                    <div class='row'>
+                        <img class='col-md-13' src="{% static "monCV/img/ph1.jpg" %}" alt="photo Developper freelance">
+                    </div>
+                </div>
+                <!-- Header second part -->
+                <div class='col-md-8'>
+                    <div class='row'>
+                        <div class='col-md-12'>
+                            <div class='row'>
+                                <div class='col-md-10 nom'>
+                                    <span>Alex Yattara</span>
+                                </div>
+                                <a href='#' class='col-md-2 nom_icon'>
+                                    <span class="fa fa-shopping-cart fa-lg" ></span>
+                                    <span class='nom_icon_span'></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class='col-md-12'>
+                            <div class='row'>
+                                <div class='col-md-10 div_job'>
+                                    <div class='row'>
+                                        <div class='col-md-4' id='experienced'>The experienced</div>
+                                        <div class='col-md-8' id='cadre'><span id='job'>Responsive_Design</span></div>
+                                    </div>
+                                </div>
+                                <a href="#" class="col-md-2 job_icon">
+                                    <span class="fas fa-download fa-lg"></span>
+                                    <span class='job_icon_span'></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class='col-md-12'>
+                            <div class='row'>
+                                <a href='#' class='col-md-2 nav_header2 nav1'>
+                                    <span class="fa fa-home fa-lg icons"></span><br/>HOME
+                                    <span class='nav1_span'> </span>
+                                </a>
+                               <div class='col-md-2 dropdown'>
+                                    <div class='row'>
+                                        <a href='#' class='col-md-12 nav_header2 nav2'>
+                                            <span class="fa fa-cogs fa-lg icons"></span><br/>SERVICES
+                                            <span class='nav2_span'> </span>
+                                        </a>
+                                        <div class='col-md-12 dropdown-content'>
+                                            <div class='row'>
+                                                <a href='#' class='col-md-12 nav_header2 nav2'>
+                                                    <span class="fa fa-cogs fa-lg icons"></span><br/>Experiences
+                                                    <span class='nav2_span'> </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div class='col-md-2 dropdown'>
+                                    <div class='row'>
+                                        <a href='#' class='col-md-12 nav_header2 nav3'>
+                                            <span class="fa fa-briefcase fa-lg icons" ></span><br/>PORTOFOLIO
+                                            <span class='nav3_span'> </span>
+                                        </a>
+                                        <div class='col-md-12 dropdown-content'>
+                                            <div class='row'>
+                                                <a href='#' class='col-md-12 nav_header2 nav3'>
+                                                    <span class="fa fa-briefcase fa-lg icons"></span><br/>Portofolio Card
+                                                    <span class='nav3_span'> </span>
+                                                </a>
+                                                <a href='#' class='col-md-12 nav_header2 nav3'>
+                                                    <span class="fa fa-briefcase fa-lg icons"></span><br/>Portofolio Liste
+                                                    <span class='nav3_span'> </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href='#' class='col-md-2 nav_header2 nav4'>
+                                    <span class="fa fa-map-marker-alt fa-lg icons" ></span><br/>CONTACTS
+                                    <span class='nav4_span'> </span>
+                                </a>
+                                <a href='#' class='col-md-2 nav_header2 nav5'>
+									<span class="fa fa-shopping-cart fa-lg icons" ></span><br/>STORE
+                                    <span class='nav5_span'> </span>
+                                    <!-- <span class=" glyphicon-glyphicon-briefcase"><br/><br/>STORE</span> -->
+                                </a>
+                                <div class='col-md-2 dropdown'>
+                                    <div class='row'>
+                                        <a href='#' class='col-md-12 nav_header2 nav6 desable'>
+                                            <span class="fab fa-blogger-b fa-lg icons" ></span><br/>BLOG
+                                            <span class='nav6_span'> </span>
+                                        </a>
+                                        <!-- <div class='col-md-12 dropdown-content'> -->
+                                        <!--     <div class='row'> -->
+                                        <!--         <a href='#' class='col-md-12 nav_header2 nav6'> -->
+                                        <!--             <span class="fab fa-blogger-b fa-lg icons" ></span><br/>Blog Card -->
+                                        <!--             <span class='nav6_span'> </span> -->
+                                        <!--         </a> -->
+                                        <!--         <a href='#' class='col-md-12 nav_header2 nav6'> -->
+                                        <!--             <span class="fab fa-blogger-b fa-lg icons" ></span><br/>Blog Liste -->
+                                        <!--             <span class='nav6_span'> </span> -->
+                                        <!--         </a> -->
+                                        <!--     </div> -->
+                                        <!-- </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endblock %}
+            </header>
+            <section class='row'>
+            {% block section %}
+                <!-- first part of the section -->
+                {% block section1 %}
+                <div class='col-md-12'>
+                    <div class='row'>
+                        <div class='col-md-8 section1'>
+                            <div class='row'>
+                                <div class='col-md-12 serviceContent'>
+                                    <p class='my_services'>
+                                        <strong>My Services</strong><br>
+                                        <small>Hi, my name Alex, I create beautiful and functional websites for
+                                        small business, below are a few services I provide.
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class='col-md-12'>
+                                    <div class='row'>
+                                        <div class='col-md-4 serviceContent'>
+                                            <p class='my_services2'>
+                                            <span class='fa fa-object-group fa-3x' style='color: #B6FF17'></span>
+                                            <strong>WEB APPLICATION</strong> <br><br>
+                                            Elegant and Clean Resume
+                                            theme based on popular
+                                            Layers WP page builder
+                                            allows to control every
+                                            website
+                                            </p>
+                                        </div>
+                                        <div class='col-md-4 serviceContent'>
+                                            <p class='my_services2'>
+                                            <span class='fab fa-ello fa-3x' style='color: #B6FF17'></span>
+                                            <strong>RESPONSIVE DESIGN</strong><br><br>
+                                            It is possible to create
+                                            different styles of the
+                                            Portfolio grid: Masonry
+                                            filtered portfolio, Cards
+                                            grid or Items List
+                                            </p>
+                                        </div>
+                                        <div class='col-md-4 serviceContent'>
+                                            <p class='my_services2'>
+                                            <span class='fa fa-shopping-cart fa-3x' style='color: #B6FF17'></span>
+                                            <strong>E-COMMERCE</strong><br><br>
+                                            Use all the Gridus theme
+                                            Communication features:
+                                            online Contact form,
+                                            Posts / Pages Comments
+                                            and Social …
+                                            </p>
+                                        </div>
+                                        <div class='col-md-12' style='height: 30px'>
+                                            <div class='row'>
+                                                <strong id='pointille' class='col-md-offset-5 col-md-2'>
+                                                    <a href='#' id='paS'>...</a>
+                                                </strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='col-md-4'>
+                            <div class='row personnal_infos'>
+                                <div class='col-md-12 sectionheight1'>
+                                    <p  class='infos'>
+                                        <strong style='font-size: 1.8em'>Personnal Infos</strong>
+                                        <p class='infosContent'>
+                                            <p><span class='titre'>Full name:</span> Alassane Yattara</p>
+                                            <p><span class='titre'>Age:</span>  21years</p>
+                                            <p id='addr'><span class='titre'>Address:</span> 2220, Oulfa, Arreda,
+                                                <p style='padding-left: 165px'>Casablanca Marroco</p>
+                                            </p>
+                                            <p><span class='titre'>Phone:</span>  +212 603 39 08 98</p>
+                                            <p><span class='titre'>Email:</span> yattus50@gmail.com</p>
+                                            <p><span class='titre'>Aviable for:</span> Freelance job</p>
+                                        </p>
+                                    </p>
+                                </div>
+                                <div class='col-md-12' style='height: 30px'>
+                                    <div class='row'>
+                                        <strong id='pointille' class='col-md-offset-4 col-md-3'>
+                                            <a href='#' id='paI'>...</a>
+                                        </strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endblock section1 %}
+                <!-- Second part of the section -->
+                {% block section2 %}
+                <div class='col-md-12'>
+                    <div class='row'>
+                        <div class='col-md-4 my_schools'>
+                            <div class='row'>
+                                <div class='col-md-12 schoolContent1'>
+                                    <strong>Education</strong>
+                                </div>
+                                <div class='col-md-12 schoolContent'>
+                                    <strong>Polytechnique</strong>
+                                    <p class='education'>
+                                        <em>2016 2018</em>
+                                        <small class='pull-right'>University of study</small>
+                                    </p>
+                                </div>
+                                <div class='col-md-12 schoolContent'>
+                                    <strong>Openclassrooms</strong>
+                                    <p class='education'>
+                                        <em>2016 2018</em>
+                                        <small class='pull-right'>Study online</small>
+                                    </p>
+                                </div>
+                                <div class='col-md-12 schoolContent'>
+                                    <strong> Web Agency </strong>
+                                    <p class='education'>
+                                        <em>2016 2018</em>
+                                        <small class='pull-right'> Web Agency </small>
+                                    </p>
+                                </div>
+                                <div class='col-md-12 schoolContent'>
+                                    <strong> Web Agency </strong>
+                                    <p class='education'>
+                                        <em>2016 2018</em>
+                                        <small class='pull-right'>Web Agency </small>
+                                    </p>
+                                </div>
+                                <div class='col-md-12' style='height: 30px'>
+                                    <div class='row'>
+                                        <strong id='pointille' class='col-md-offset-4 col-md-3'>
+                                            <a href='#' id='paE'>...</a>
+                                        </strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='col-md-8 my_skills'>
+                             <div class='row'>
+                                <div class='col-md-12 schoolContent1'>
+                                    <strong> Professional Skills</strong>
+                                </div>
+                                <div class='col-md-12'>
+                                    <div class='row'>
+                                        <aside class='col-md-6'>
+                                            <div class='row'>
+                                                <div class='col-md-12 aside professionalC1'>
+                                                    <i class="fa fa-object-group"></i> Web Design<br>
+                                                    <div class='progress progress-striped'>
+                                                        <div class='progress-bar progress-bar-info pweb_design'></div>
+                                                    </div>
+                                                    <div class='pull-right'>55%</div>
+                                                </div>
+                                                <div class='col-md-12 aside professionalC1'>
+                                                    <i class="fab fa-js"></i> Java Script<br>
+                                                    <div class='progress progress-striped'>
+                                                        <div class='progress-bar progress-bar-info pjavascript'></div>
+                                                    </div>
+                                                    <div class='pull-right'>77%</div>
+                                                </div>
+                                                <div class='col-md-12 aside professionalC1'>
+                                                  <i class="fas fa-laptop-code"></i> Web Programming<br>
+                                                    <div class='progress progress-striped'>
+                                                        <div class='progress-bar progress-bar-info pweb_prog'></div>
+                                                    </div>
+                                                    <div class='pull-right'>93%</div>
+                                                </div>
+                                                <div class='col-md-12 aside professionalC1'>
+                                                    <i class="fas fa-file-code"></i> jQuery<br>
+                                                    <div class='progress progress-striped'>
+                                                        <div class='progress-bar progress-bar-info pjquery'></div>
+                                                    </div>
+                                                    <div class='pull-right'>60%</div>
+                                                </div>
+                                            </div>
+                                        </aside>
+                                        <aside class='col-md-6'>
+                                            <div class='row'>
+                                                <div class='col-md-12 aside professionalC2'>
+                                                    <i class="fab fa-html5"></i> HTML Coding<br>
+                                                    <div class='progress progress-striped'>
+                                                        <div class='progress-bar progress-bar-info phtml'></div>
+                                                    </div>
+                                                    <div class='pull-right'>75%</div>
+                                                </div>
+                                                <div class='col-md-12 aside professionalC2'>
+                                                    <i class="fab fa-css3"></i> CSS3 Coding<br>
+                                                    <div class='progress progress-striped'>
+                                                        <div class='progress-bar progress-bar-info pcss'></div>
+                                                    </div>
+                                                    <div class='pull-right'>64%</div>
+                                                </div>
+                                                <div class='col-md-12 aside professionalC2'>
+                                                    <i class="fab fa-python"></i><i class="fas fa-server"></i> Django<br>
+                                                    <div class='progress progress-striped'>
+                                                        <div class='progress-bar progress-bar-info pdjango'></div>
+                                                    </div>
+                                                    <div class='pull-right'>80%</div>
+                                                </div>
+                                                <div class='col-md-12 aside professionalC2'>
+                                                    <i class="fab fa-wordpress"></i> WordPress<br>
+                                                    <div class='progress progress-striped'>
+                                                        <div class='progress-bar progress-bar-info pwordpress'></div>
+                                                    </div>
+                                                    <div class='pull-right'>52%</div>
+                                                </div>
+                                            </div>
+                                        </aside>
+                                    </div>
+                                </div>
+                                <div class='col-md-12' style='height: 30px'>
+                                    <div class='row'>
+                                        <strong id='pointille' class='col-md-offset-5 col-md-2'>
+                                            <a href='#' id='paP'>...</a>
+                                        </strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endblock section2 %}
+                <!-- third part of the section -->
+                {% block section3 %}
+                <div class='col-md-13'>
+                    <div class='row'>
+                        <div class='col-md-12 my_framework'>
+                            <div class='row'>
+                                <div class='col-md-2 sectionheight3'>
+                                        <img class='col-md-13 django' src='../../static/monCV/img/frame/logo.png' alt="Photo framework" >
+                                </div>
+                                <div class='col-md-2 sectionheight3'>
+
+                                        <img class='col-md-13 bootstrap' src='../../static/monCV/img/frame/bootstrap-inv2.png' alt="Photo framework" >
+                                </div>
+                                <div class='col-md-2 sectionheight3'>
+
+                                        <img class='col-md-13 html' src='../../static/monCV/img/frame/html-inv.png' alt="Photo framework" >
+                                </div>
+                                <div class='col-md-2 sectionheight3'>
+
+                                        <img class='col-md-13 css' src='../../static/monCV/img/frame/css-inv4.png' alt="Photo framework" >
+                                </div>
+                                <div class='col-md-2 sectionheight3'>
+
+                                        <img class='col-md-13 jquery' src='../../static/monCV/img/frame/jquery-inv2.png' alt="Photo framework" >
+                                </div>
+                                <div class='col-md-2 sectionheight3'>
+
+                                        <img class='col-md-13 python' src='../../static/monCV/img/frame/wordpress-inv2.png' alt="Photo framework" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+               {% endblock section3 %}
+            {% endblock section %}
+            </section>
+            <footer class='row'>
+            {% block footer %}
+                <div class='col-md-3 '>
+                    <div class='row'>
+                        <div class='col-md-12 footerheight1'>
+                            <strong>ALASSANE YATTARA</strong>
+                        </div>
+                        <div class='col-md-12 footerheight2'>
+                            <div class='row'>
+                                <p class='col-md-3 image'><img src="../../static/monCV/img/photo.jpg" alt="photo Developper freelance"></p>
+                                <div class='col-md-9 detail'>
+                                    <p>
+                                        Responsive Design, Front-end, Back-end
+                                        (<span style='color:magenta'>Django</span>),
+                                        and more.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <div class='col-md-3 '>
+                    <div class='row'>
+                        <div class='col-md-12 footerheight1'>
+                            <strong>MORE ABOUT ME</strong>
+                        </div>
+                        <div class='col-md-12 footerheight2'>
+                            <p>
+                                I'm web developper and programmer
+                                living in Casablanca, morroco,
+                                I make web applications, usually with
+                                <span style='color:magenta'>DJANGO</span>
+                                and create beautiful
+                                and functional website for small
+                                business.
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                <div class='col-md-3 '>
+                    <div class='row'>
+                        <div class='col-md-12 footerheight1'>
+                            <strong>FIND MY INFO</strong>
+                        </div>
+                        <div class='col-md-12 footerheight2'>
+
+                        </div>
+                    </div>
+                    </div>
+                <div class='col-md-3 '>
+                    <div class='row'>
+                        <div class='col-md-12 footerheight1'>
+                            <strong>STAY CONNECTED</strong>
+                        </div>
+                        <div class='col-md-12 footerheight2'>
+                            <span class="fab fa-google-plus">jhnoohj</span>
+                        </div>
+                    </div>
+                    </div>
+            {% endblock footer %}
+            </footer>
+        </div>
+    {% endblock container %}
+    </div>
+    <script scr='{% static 'monCV/js/jquery-3.3.1/jquery.js' %}'></script>
+    {% bootstrap_javascript jquery=1 %}
+    <script src='{% static 'monCV/bootstrap/js/bootstrap.js' %}'></script>
+    <script src='{% static 'monCV/js/ExperienceAnimation.js' %}'></script>
+</body>
+</html>

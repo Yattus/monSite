@@ -1,2 +1,6 @@
-monSite/
+monCV/__pycache__/
+monCV/migrations/__pycache__/
+db.sqlite3
+monSite/__pycache__/
+monSite/settings.py
 manage.py
