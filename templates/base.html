@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
 {% block head %}
+    {% load bootstrap3 %}
     {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static "monCV/css/monCV2.css" %}">
-    {% load bootstrap3 %}
     {% bootstrap_javascript %}
-    {# Display django.contrib.messages as Bootstrap alerts #}
     {% bootstrap_messages %}
     {% bootstrap_css %}
     <link rel="stylesheet" href="{% static "monCV/bootstrap/css/bootstrap.css" %}"/>
@@ -36,7 +35,7 @@
                                 <div class='col-md-10 nom'>
                                     <span>Alex Yattara</span>
                                 </div>
-                                <a href='#' class='col-md-2 nom_icon'>
+                                <a href='{% url 'base' %}' class='col-md-2 nom_icon'>
                                     <span class="fa fa-shopping-cart fa-lg" ></span>
                                     <span class='nom_icon_span'></span>
                                 </a>
@@ -48,7 +47,7 @@
                                 <div class='col-md-10 div_job'>
                                     <div class='row'>
                                         <div class='col-md-4' id='experienced'>The experienced</div>
-                                        <div class='col-md-8' id='cadre'><span id='job'>Responsive_Design</span></div>
+                                        <div class='col-md-8' id='cadre'><span id='job'>Responsive<span style='color: #424141'>i</span>Design</span></div>
                                     </div>
                                 </div>
                                 <a href="#" class="col-md-2 job_icon">
@@ -60,69 +59,68 @@
 
                         <div class='col-md-12'>
                             <div class='row'>
-                                <a href='#' class='col-md-2 nav_header2 nav1'>
+                                <a href='{% url 'base' %}' class='col-md-2 nav_header2 nav1'>
                                     <span class="fa fa-home fa-lg icons"></span><br/>HOME
                                     <span class='nav1_span'> </span>
                                 </a>
                                <div class='col-md-2 dropdown'>
                                     <div class='row'>
-                                        <a href='#' class='col-md-12 nav_header2 nav2'>
+                                        <a href='{% url 'base' %}' class='col-md-12 nav_header2 nav2'>
                                             <span class="fa fa-cogs fa-lg icons"></span><br/>SERVICES
                                             <span class='nav2_span'> </span>
                                         </a>
-                                        <div class='col-md-12 dropdown-content'>
-                                            <div class='row'>
-                                                <a href='#' class='col-md-12 nav_header2 nav2'>
-                                                    <span class="fa fa-cogs fa-lg icons"></span><br/>Experiences
-                                                    <span class='nav2_span'> </span>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <!-- <div class='col-md-12 dropdown-content'> -->
+                                        <!--     <div class='row'> -->
+                                            <!--         <a href='{% url 'base' %}' class='col-md-12 nav_header2 nav2'> -->
+                                        <!--             <span class="fa fa-cogs fa-lg icons"></span><br/>Experiences -->
+                                        <!--             <span class='nav2_span'> </span> -->
+                                        <!--         </a> -->
+                                        <!--     </div> -->
+                                        <!-- </div> -->
                                     </div>
                                 </div>
 
                                  <div class='col-md-2 dropdown'>
                                     <div class='row'>
-                                        <a href='#' class='col-md-12 nav_header2 nav3'>
+                                        <a href='{% url 'base' %}' class='col-md-12 nav_header2 nav3'>
                                             <span class="fa fa-briefcase fa-lg icons" ></span><br/>PORTOFOLIO
                                             <span class='nav3_span'> </span>
                                         </a>
-                                        <div class='col-md-12 dropdown-content'>
-                                            <div class='row'>
-                                                <a href='#' class='col-md-12 nav_header2 nav3'>
-                                                    <span class="fa fa-briefcase fa-lg icons"></span><br/>Portofolio Card
-                                                    <span class='nav3_span'> </span>
-                                                </a>
-                                                <a href='#' class='col-md-12 nav_header2 nav3'>
-                                                    <span class="fa fa-briefcase fa-lg icons"></span><br/>Portofolio Liste
-                                                    <span class='nav3_span'> </span>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <!-- <div class='col-md-12 dropdown-content'> -->
+                                        <!--     <div class='row'> -->
+                                            <!--         <a href='{% url 'base' %}' class='col-md-12 nav_header2 nav3'> -->
+                                        <!--             <span class="fa fa-briefcase fa-lg icons"></span><br/>Portofolio Card -->
+                                        <!--             <span class='nav3_span'> </span> -->
+                                        <!--         </a> -->
+                                            <!--         <a href='{% url 'base' %}' class='col-md-12 nav_header2 nav3'> -->
+                                        <!--             <span class="fa fa-briefcase fa-lg icons"></span><br/>Portofolio Liste -->
+                                        <!--             <span class='nav3_span'> </span> -->
+                                        <!--         </a> -->
+                                        <!--     </div> -->
+                                        <!-- </div> -->
                                     </div>
                                 </div>
-                                <a href='#' class='col-md-2 nav_header2 nav4'>
+                                <a href='{% url 'base' %}' class='col-md-2 nav_header2 nav4'>
                                     <span class="fa fa-map-marker-alt fa-lg icons" ></span><br/>CONTACTS
                                     <span class='nav4_span'> </span>
                                 </a>
-                                <a href='#' class='col-md-2 nav_header2 nav5'>
+                                <a href='{% url 'base' %}' class='col-md-2 nav_header2 nav5'>
 									<span class="fa fa-shopping-cart fa-lg icons" ></span><br/>STORE
                                     <span class='nav5_span'> </span>
-                                    <!-- <span class=" glyphicon-glyphicon-briefcase"><br/><br/>STORE</span> -->
                                 </a>
                                 <div class='col-md-2 dropdown'>
                                     <div class='row'>
-                                        <a href='#' class='col-md-12 nav_header2 nav6 desable'>
+                                        <a href='{% url 'base' %}' class='col-md-12 nav_header2 nav6 desable'>
                                             <span class="fab fa-blogger-b fa-lg icons" ></span><br/>BLOG
                                             <span class='nav6_span'> </span>
                                         </a>
                                         <!-- <div class='col-md-12 dropdown-content'> -->
                                         <!--     <div class='row'> -->
-                                        <!--         <a href='#' class='col-md-12 nav_header2 nav6'> -->
+                                            <!--         <a href='{% url 'base' %}' class='col-md-12 nav_header2 nav6'> -->
                                         <!--             <span class="fab fa-blogger-b fa-lg icons" ></span><br/>Blog Card -->
                                         <!--             <span class='nav6_span'> </span> -->
                                         <!--         </a> -->
-                                        <!--         <a href='#' class='col-md-12 nav_header2 nav6'> -->
+                                            <!--         <a href='{% url 'base' %}' class='col-md-12 nav_header2 nav6'> -->
                                         <!--             <span class="fab fa-blogger-b fa-lg icons" ></span><br/>Blog Liste -->
                                         <!--             <span class='nav6_span'> </span> -->
                                         <!--         </a> -->
@@ -134,7 +132,7 @@
                         </div>
                     </div>
                 </div>
-                {% endblock %}
+               {% endblock %}
             </header>
             <section class='row'>
             {% block section %}
@@ -147,7 +145,7 @@
                                 <div class='col-md-12 serviceContent'>
                                     <p class='my_services'>
                                         <strong>My Services</strong><br>
-                                        <small>Hi, my name Alex, I create beautiful and functional websites for
+                                        <small class='service'>Hi, my name Alex, I create beautiful and functional websites for
                                         small business, below are a few services I provide.
                                         </small>
                                     </p>
@@ -190,7 +188,7 @@
                                         <div class='col-md-12' style='height: 30px'>
                                             <div class='row'>
                                                 <strong id='pointille' class='col-md-offset-5 col-md-2'>
-                                                    <a href='#' id='paS'>...</a>
+                                                    <a href='{% url 'base' %}' id='paS'>...</a>
                                                 </strong>
                                             </div>
                                         </div>
@@ -219,7 +217,7 @@
                                 <div class='col-md-12' style='height: 30px'>
                                     <div class='row'>
                                         <strong id='pointille' class='col-md-offset-4 col-md-3'>
-                                            <a href='#' id='paI'>...</a>
+                                            <a href='{% url 'base' %}' id='paI'>...</a>
                                         </strong>
                                     </div>
                                 </div>
@@ -268,7 +266,7 @@
                                 <div class='col-md-12' style='height: 30px'>
                                     <div class='row'>
                                         <strong id='pointille' class='col-md-offset-4 col-md-3'>
-                                            <a href='#' id='paE'>...</a>
+                                            <a href='{% url 'base' %}' id='paE'>...</a>
                                         </strong>
                                     </div>
                                 </div>
@@ -285,29 +283,29 @@
                                             <div class='row'>
                                                 <div class='col-md-12 aside professionalC1'>
                                                     <i class="fa fa-object-group"></i> Web Design<br>
-                                                    <div class='progress progress-striped'>
-                                                        <div class='progress-bar progress-bar-info pweb_design'></div>
+                                                    <div class='prog'>
+                                                        <div class='pweb_design'></div>
                                                     </div>
                                                     <div class='pull-right'>55%</div>
                                                 </div>
                                                 <div class='col-md-12 aside professionalC1'>
                                                     <i class="fab fa-js"></i> Java Script<br>
-                                                    <div class='progress progress-striped'>
-                                                        <div class='progress-bar progress-bar-info pjavascript'></div>
+                                                    <div class='prog'>
+                                                        <div class='pjavascript'></div>
                                                     </div>
                                                     <div class='pull-right'>77%</div>
                                                 </div>
                                                 <div class='col-md-12 aside professionalC1'>
                                                   <i class="fas fa-laptop-code"></i> Web Programming<br>
-                                                    <div class='progress progress-striped'>
-                                                        <div class='progress-bar progress-bar-info pweb_prog'></div>
+                                                    <div class='prog'>
+                                                        <div class='pweb_prog'></div>
                                                     </div>
                                                     <div class='pull-right'>93%</div>
                                                 </div>
                                                 <div class='col-md-12 aside professionalC1'>
                                                     <i class="fas fa-file-code"></i> jQuery<br>
-                                                    <div class='progress progress-striped'>
-                                                        <div class='progress-bar progress-bar-info pjquery'></div>
+                                                    <div class='prog'>
+                                                        <div class='pjquery'></div>
                                                     </div>
                                                     <div class='pull-right'>60%</div>
                                                 </div>
@@ -317,29 +315,29 @@
                                             <div class='row'>
                                                 <div class='col-md-12 aside professionalC2'>
                                                     <i class="fab fa-html5"></i> HTML Coding<br>
-                                                    <div class='progress progress-striped'>
-                                                        <div class='progress-bar progress-bar-info phtml'></div>
+                                                    <div class='prog'>
+                                                        <div class='phtml'></div>
                                                     </div>
                                                     <div class='pull-right'>75%</div>
                                                 </div>
                                                 <div class='col-md-12 aside professionalC2'>
                                                     <i class="fab fa-css3"></i> CSS3 Coding<br>
-                                                    <div class='progress progress-striped'>
-                                                        <div class='progress-bar progress-bar-info pcss'></div>
+                                                    <div class='prog'>
+                                                        <div class='pcss'></div>
                                                     </div>
                                                     <div class='pull-right'>64%</div>
                                                 </div>
                                                 <div class='col-md-12 aside professionalC2'>
                                                     <i class="fab fa-python"></i><i class="fas fa-server"></i> Django<br>
-                                                    <div class='progress progress-striped'>
-                                                        <div class='progress-bar progress-bar-info pdjango'></div>
+                                                    <div class='prog'>
+                                                        <div class='pdjango'></div>
                                                     </div>
                                                     <div class='pull-right'>80%</div>
                                                 </div>
                                                 <div class='col-md-12 aside professionalC2'>
                                                     <i class="fab fa-wordpress"></i> WordPress<br>
-                                                    <div class='progress progress-striped'>
-                                                        <div class='progress-bar progress-bar-info pwordpress'></div>
+                                                    <div class='prog'>
+                                                        <div class='pwordpress'></div>
                                                     </div>
                                                     <div class='pull-right'>52%</div>
                                                 </div>
@@ -350,7 +348,7 @@
                                 <div class='col-md-12' style='height: 30px'>
                                     <div class='row'>
                                         <strong id='pointille' class='col-md-offset-5 col-md-2'>
-                                            <a href='#' id='paP'>...</a>
+                                            <a href='{% url 'base' %}' id='paP'>...</a>
                                         </strong>
                                     </div>
                                 </div>
@@ -460,7 +458,6 @@
     {% endblock container %}
     </div>
     <script scr='{% static 'monCV/js/jquery-3.3.1/jquery.js' %}'></script>
-    {% bootstrap_javascript jquery=1 %}
     <script src='{% static 'monCV/bootstrap/js/bootstrap.js' %}'></script>
     <script src='{% static 'monCV/js/ExperienceAnimation.js' %}'></script>
 </body>

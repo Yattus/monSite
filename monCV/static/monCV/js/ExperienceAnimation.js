@@ -7,7 +7,8 @@ var v = 5;
 var jobLActuel = 0;
 var cpt = 0;
 var t = false;
-liste = ['Web_Application', 'Responsive_Design', 'WordPress_Developper'];
+liste = ['Web', 'Responsive', 'WordPress'];
+liste2 = ['Application', 'Design', 'Developper']
 
 function funtionAnimation(){
     jobLActuel = parseFloat(getComputedStyle(jobElt).width);
@@ -22,7 +23,7 @@ function funtionAnimation(){
     {
         d *= -1;
         // t = true;
-        jobElt.textContent = liste[cpt];
+        jobElt.innerHTML = liste[cpt]+"<span style='color: #424141'>i</span>"+liste2[cpt]
         cpt += 1;
         if (cpt===3) { cpt = 0;}
     }

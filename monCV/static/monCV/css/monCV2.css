@@ -84,32 +84,24 @@ header img{
 }
 
 .container{
-   margin-right: auto;
-   margin-left: auto;
-   padding-right: 15px;
-   padding-left: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 
-/* header img{ */
-/*     height: 370px; */
-/*     width: 100%; */
-/* } */
-
 .nom{
-   font-family: 'black_jackregular', 'open_sanslight', 'cac_champagneregular', 'open_sansitalic', sans-serif, Verdana, Arial, "Arial Black", Impact;
-    padding-left: 50px;
+    font-family: 'cac_champagneregular', 'black_jackregular', 'open_sanslight', 'open_sansitalic', sans-serif, Verdana, Arial, "Arial Black", Impact;
     text-align: left;
-    font-size: 3em;
+    text-indent: 50px;
+    font-size: 5em;
     color: white;
     background-color: #474747;
     line-height: 120px;
 }
-
-/* .jumbotron{ */
-/*     /1* height: 180px; *1/ */
-/*     background-color: #6d6b6b; */
-/* } */
 
 .nom_icon{
     background-color: #464444;
@@ -117,6 +109,7 @@ header img{
 
 .div_job{
     /* font-family: 'robotolight', 'open_sanslight'; */
+    font-family: 'open_sansitalic', sans-serif, Verdana, Arial, "Arial Black", Impact;
     font-size: 1.6em;
     background-color: #424141;
     line-height: 120px;
@@ -167,10 +160,13 @@ header img{
     left: -126px;
     top: 0px;
     background-color: rgba(40,40,40,0.5);
-
     /* Transition propriété */
     transition-property: left;
     transition-duration: 400ms;
+}
+
+.pull-right {
+    font-family: 'open_sanslight', 'open_sansitalic', sans-serif, Verdana, Arial, "Arial Black", Impact;
 }
 
 .nom_icon:hover .nom_icon_span, .job_icon:hover .job_icon_span{
@@ -190,7 +186,8 @@ header img{
     height: 92px;
     text-align: left;
     color: white;
-    padding-left: 45px;
+    /* padding-left: 45px; */
+    text-indent: 45px;
     padding-top: 30px;
 }
 
@@ -199,77 +196,100 @@ header img{
 }
 
 .professionalC1{
+    font-family: 'open_sansitalic', sans-serif, Verdana, Arial, "Arial Black", Impact;
     height: 92px;
     color: white;
     text-align: left;
-    padding-left: 45px;
 }
 
 .professionalC2{
+    font-family: 'open_sansitalic', sans-serif, Verdana, Arial, "Arial Black", Impact;
     height: 92px;
     color: white;
     text-align: left;
-    padding-left: 15px;
-    padding-right: 45px;
+    /* padding-right: 45px; */
 }
 
 .pweb_design {
     width: 55%;
+    height: 8px;
+    background-color: #d6eaf8;
+    border-radius: 15px;
+}
+
+.prog {
+    border: 1px solid #2fadda;
+    border-radius: 15px;
+    height: 10px;
+    /* width: 315px; */
 }
 
 .pjavascript {
     width: 77%;
+    height: 8px;
+    background-color: #d6eaf8;
+    border-radius: 15px;
 }
 
 .pweb_prog {
     width: 93%;
+    height: 8px;
+    background-color: #d6eaf8;
+    border-radius: 15px;
 }
 
 .pjquery {
     width: 60%;
+    height: 8px;
+    background-color: #d6eaf8;
+    border-radius: 15px;
 }
 
 
 .phtml{
     width: 75%;
+    height: 8px;
+    background-color: #d6eaf8;
+    border-radius: 15px;
 }
 
 .pcss {
     width: 64%;
+    height: 8px;
+    background-color: #d6eaf8;
+    border-radius: 15px;
 }
 
 .pdjango {
     width: 80%;
+    height: 8px;
+    background-color: #d6eaf8;
+    border-radius: 15px;
 }
 
 .pwordpress {
     width: 52%;
-}
-
-.progress {
     height: 8px;
+    background-color: #d6eaf8;
+    border-radius: 15px;
 }
 
-.pull-right {
-    margin-top: -15px;
-}
 
 .schoolContent{
     text-align: left;
     color: white;
-    padding-left: 15px;
     height: 60px;
-    padding-left: 45px;
+    padding-left: 100px;
 }
 
 .schoolContent strong {
     font-weight: bold;
     border-left: 3px solid white;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 .education {
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 .aside{
@@ -423,13 +443,13 @@ header img{
 }
 
 .nav_header2{
-    font-family: Arial, 'open_sanslight';
+    font-family: sans-serif, Verdana, Arial, "Arial Black", Impact;
     height: 120px;
     display: block;
     padding-top: 35px;
     color: white;
     text-decoration: none;
-    /* position: relative; */
+    position: relative;
     overflow: hidden;
 }
 
@@ -440,6 +460,7 @@ header img{
 
 /* Address : Personnal Infos */
 .personnal_infos{
+    font-family: 'open_sanslight', 'cac_champagneregular', 'open_sansitalic', sans-serif, Verdana, Arial, "Arial Black", Impact;
     background-color: #eee;
 }
 
@@ -483,15 +504,22 @@ header img{
 }
 
 .my_services{
+    /* font-family: 'open_sansitalic', sans-serif, Verdana, Arial, "Arial Black", Impact; */
     padding-top: 40px;
     padding-left: 25px;
     font-size: 1.3em;
-    color: #666;
 }
 
 
 .my_services strong {
+    font-family: 'open_sanslight', 'open_sansitalic', sans-serif, Verdana, Arial, "Arial Black", Impact;
     font-size: 1.8em;
+}
+
+.service{
+    font-family: 'open_sanslight', 'open_sansitalic', sans-serif, Verdana, Arial, "Arial Black", Impact;
+    display: block;
+    padding-left: 40px;
 }
 
 .my_services2{
@@ -549,6 +577,7 @@ footer .detail {
 
 .footerheight2 {
     /* padding-left: 37px; */
+    font-family: 'open_sanslight', 'cac_champagneregular', 'open_sansitalic', sans-serif, Verdana, Arial, "Arial Black", Impact;
     text-align: left;
     margin-top: 8px;
     /* font-size: 0.9em; */
@@ -567,7 +596,7 @@ footer .detail {
     display: block;
     width: 100%;
     border-radius: 15px;
-    background-color: #eee;
+    /* background-color: #eee; */
 }#paS:hover {
     text-decoration: none;
     background-color: #ddd;
@@ -578,7 +607,7 @@ footer .detail {
     display: block;
     width: 100%;
     border-radius: 15px;
-    background-color: #ddd;
+    /* background-color: #ddd; */
 }#paI:hover {
     text-decoration: none;
     background-color: #aaa;
@@ -590,7 +619,7 @@ footer .detail {
     border-radius: 15px;
     width: 100%;
     color: white;
-    background-color: #1ab676
+    /* background-color: #1ab676 */
 }#paE:hover {
     text-decoration: none;
     background-color: #1a7;
@@ -602,7 +631,7 @@ footer .detail {
     width: 100%;
     color: white;
     border-radius: 15px;
-    background-color: #18b;
+    /* background-color: #18b; */
 }#paP:hover {
     text-decoration: none;
     background-color: #16b;
