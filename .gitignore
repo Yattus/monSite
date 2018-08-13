@@ -1,5 +1,6 @@
 monCV/__pycache__/
 monCV/migrations/__pycache__/
+monCV/static/monCV/img/
 db.sqlite3
 monSite/__pycache__/
 monSite/settings.py
