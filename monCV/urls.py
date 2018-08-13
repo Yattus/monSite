@@ -1,4 +1,5 @@
 from django.conf.urls import url
+from django.urls import include
 from django.views.generic import TemplateView
 from . import views
 
@@ -24,4 +25,9 @@ urlpatterns = [
     url(r'store\.+/$', TemplateView.as_view(
         template_name='store_page.html'),
         name='store_page'),
+
+    url(r'recherche/$', TemplateView.as_view(template_name='home_page'),
+        name='recherche'),
+
+    url(r'^i18n/', include('django.conf.urls.i18n')),
 ]

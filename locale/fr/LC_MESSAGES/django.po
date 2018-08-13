@@ -1,0 +1,252 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-12 23:50+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: monSite/settings.py:140
+msgid "French"
+msgstr ""
+
+#: monSite/settings.py:141
+msgid "English"
+msgstr ""
+
+#. Translators: Titre la page
+#: templates/base.html:15
+msgid "Freelance Developper"
+msgstr ""
+
+#: templates/base.html:48
+msgid "The experienced"
+msgstr ""
+
+#: templates/base.html:49
+msgid "Responsive"
+msgstr ""
+
+#: templates/base.html:62
+msgid "HOME"
+msgstr ""
+
+#: templates/base.html:70
+msgid "PAGE NOT RIGHT YET"
+msgstr ""
+
+#: templates/base.html:73
+msgid ""
+"\n"
+"                                            it will be rigth in few moments\n"
+"                                            "
+msgstr ""
+
+#: templates/base.html:86
+msgid "SERVICES"
+msgstr ""
+
+#: templates/base.html:104
+msgctxt "portofolio"
+msgid "PORTOFOLIO"
+msgstr ""
+
+#: templates/base.html:123
+msgctxt "contacts"
+msgid "CONTACTS"
+msgstr ""
+
+#: templates/base.html:128
+msgctxt "store"
+msgid "STORE"
+msgstr ""
+
+#: templates/base.html:135
+msgctxt "blog"
+msgid "BLOG"
+msgstr ""
+
+#: templates/base.html:167
+msgid "My Services"
+msgstr ""
+
+#: templates/base.html:169
+msgid ""
+"\n"
+"                                            website development and web "
+"applications, responsive design, SEO and optimization\n"
+"                                            of applications and website, e-"
+"commerce service, below are a few services I provide. \n"
+"                                            "
+msgstr ""
+
+#: templates/base.html:181
+msgid "WEB APPLICATION"
+msgstr ""
+
+#: templates/base.html:182
+msgid ""
+"\n"
+"                                                I develop secure, fast and "
+"powerful\n"
+"                                                web2.0 applications for "
+"small business\n"
+"                                                simple and complex like "
+"pinterest and\n"
+"                                                bit bucket. \n"
+"                                            "
+msgstr ""
+
+#: templates/base.html:193
+msgid "RESPONSIVE DESIGN"
+msgstr ""
+
+#: templates/base.html:194
+msgid ""
+"\n"
+"                                                Nowadays unavoidable, I "
+"realize\n"
+"                                                sites and applications "
+"that \n"
+"                                                automatically adapts to "
+"different\n"
+"                                                screen (desktop, tablet and "
+"smarphone)\n"
+"                                            "
+msgstr ""
+
+#: templates/base.html:205
+msgid "E-COMMERCE"
+msgstr ""
+
+#: templates/base.html:206
+msgid ""
+"\n"
+"                                               Ecommerce, become a challenge "
+"and\n"
+"                                               a universe all expanding, I "
+"create\n"
+"                                               ecommerce website, my main "
+"activity\n"
+"                                               is the proposal of books in "
+"my blog\n"
+"                                               and more…\n"
+"                                            "
+msgstr ""
+
+#: templates/base.html:231
+msgid "Personnal Infos"
+msgstr ""
+
+#: templates/base.html:233
+msgid "Full name"
+msgstr ""
+
+#: templates/base.html:234
+msgid "Age"
+msgstr ""
+
+#: templates/base.html:234
+msgid "years"
+msgstr "ans"
+
+#: templates/base.html:236
+msgid "Casablanca Marroco"
+msgstr ""
+
+#: templates/base.html:238
+msgid "Phone"
+msgstr ""
+
+#: templates/base.html:239
+msgid "Email"
+msgstr ""
+
+#: templates/base.html:240
+msgid "Aviable-for "
+msgstr ""
+
+#: templates/base.html:240
+msgid " Freelance job "
+msgstr ""
+
+#: templates/base.html:263
+msgid "Education"
+msgstr ""
+
+#: templates/base.html:269
+msgid "University of study"
+msgstr ""
+
+#: templates/base.html:273
+msgid "Openclassrooms, CodeAcademy and Edx"
+msgstr ""
+
+#: templates/base.html:280
+msgid "Web Media Network «Traineeship»"
+msgstr ""
+
+#: templates/base.html:283 templates/base.html:290
+msgid "Web-Agency"
+msgstr ""
+
+#: templates/base.html:287
+msgid "Digital Agency «Traineeship»"
+msgstr ""
+
+#: templates/base.html:306
+msgid "Professional Skills"
+msgstr ""
+
+#: templates/base.html:313
+msgid "Design"
+msgstr ""
+
+#: templates/base.html:428
+msgid "ALASSANE YATTARA"
+msgstr ""
+
+#: templates/base.html:435
+msgid ""
+"Web application back-end end front\n"
+"                                        end, Responsive design, SEO and "
+"more..."
+msgstr ""
+
+#: templates/base.html:446
+msgid "MORE ABOUT ME"
+msgstr ""
+
+#: templates/base.html:450
+msgid ""
+"I'm student in computer ingeneer, living in Casablanca, "
+"morroco                                \n"
+"                                passionat in web developpement and "
+"programming, I make web applications\n"
+"                                and I create beautiful functional websites "
+"for small business, usually with"
+msgstr ""
+
+#: templates/base.html:461
+msgid "FIND MY INFO"
+msgstr ""
+
+#: templates/base.html:465 templates/base.html:466
+msgid "Search"
+msgstr ""
+
+#: templates/base.html:474
+msgid "STAY CONNECTED"
+msgstr ""

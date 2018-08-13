@@ -232,14 +232,14 @@ header img{
 }
 
 .pweb_prog {
-    width: 93%;
+    width: 95%;
     height: 8px;
     background-color: #d6eaf8;
     border-radius: 15px;
 }
 
-.pjquery {
-    width: 60%;
+.pvim {
+    width: 90%;
     height: 8px;
     background-color: #d6eaf8;
     border-radius: 15px;
@@ -261,7 +261,7 @@ header img{
 }
 
 .pdjango {
-    width: 80%;
+    width: 85%;
     height: 8px;
     background-color: #d6eaf8;
     border-radius: 15px;
@@ -525,6 +525,7 @@ header img{
 .my_services2{
     font-family: 'open_sanslight', 'cac_champagneregular', 'open_sansitalic', sans-serif, Verdana, Arial, "Arial Black", Impact;
     padding-left: 20px;
+    text-align: center;
 }
 
 .my_schools {
@@ -581,7 +582,7 @@ footer .detail {
     text-align: left;
     margin-top: 8px;
     /* font-size: 0.9em; */
-    text-align: justify;
+    /* text-align: justify; */
     font-size: small;
     height: 175px;
 }
@@ -635,6 +636,27 @@ footer .detail {
 }#paP:hover {
     text-decoration: none;
     background-color: #16b;
+}
+
+#reseau , #reseau1{
+    display: block;
+    width: 38px;
+    line-height: 35px;
+    border-radius: 50px 5px 5px 5px;
+    background-color: #555;
+    color: white;
+}
+
+#reseau:hover, #reseau1:hover {
+    background-color: #f44;
+}
+
+#reseau1 {
+    margin-left: 15px;
+}
+
+#reseau {
+    margin-left: 5px;
 }
 
 @media (min-width: 768px) {
