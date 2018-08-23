@@ -11,8 +11,12 @@
     margin-top: 150px
 }
 
+.offreContent{
+    font-family: 'open_sanslight', sans-serif, Verdana, Arial, "Arial Black", Impact;
+}
+
 .Ssection2 {
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     padding-top: 100px;
     background-color: white;
 }
@@ -27,15 +31,56 @@
 }
 
 .description{
-    line-height: 150px;
+    height: 130px;
+    padding-top: 15px;
+    font-family: 'open_sansitalic', sans-serif, Verdana, Arial, "Arial Black", Impact;
+    text-align: center;
 } 
+
+.content-header{
+  font-family: 'Oleo Script', cursive;
+  color: #fcc500;
+  font-size: 45px;
+}
 
 .S2section2 {
     display:flex;
     justify-content:space-around;
+    background: #eee;
+}
+
+.prices {
+    margin-top: 100px;
+}
+
+.PricesContent{
+    font-family: 'open_sanslight', sans-serif, Verdana, Arial, "Arial Black", Impact;
+    margin-bottom: 60px;
 }
 
 .S2section2 div {
    line-height: 600px; 
    background: white;
+   margin-bottom: 130px;
+}
+
+.formule{
+    line-height: 80px;
+}
+
+.prix{
+    line-height: 130px;
+}
+
+.detail {
+    margin-top: 15px;
+    height: 100px;
+}
+
+.formuleContent {
+    line-height: 40px;
+}
+
+.achat {
+    line-height: 40px;
 }

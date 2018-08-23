@@ -71,7 +71,7 @@ body{
 }
 
 [class*='col-'], footer{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     text-align: center;
     /* background-color: lightgreen; */
     /* line-height: 70px; */
