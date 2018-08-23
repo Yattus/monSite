@@ -12,13 +12,25 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% comment %} Translators: Titre la page {% endcomment %}
-    <title>{% blocktrans %}Freelance Developper{% endblocktrans %}</title>
+    <title>{% trans 'Freelance Developper' %}</title>
 {% endblock %}
 </head>
 <body>
     <div class='container'>
         {% block container %}
         <div class='col-md-12'>
+            <div class='row'>
+                <form action="/i18n/setlang/" method="post" class='col-md-2 pull-right' style='color:black;line-height:50px;display:flex'>
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="{% url "base" %}"/>
+                    <select name="language" style='margin-left:47px'>
+                    {% for lang in LANGUAGES %}
+                        <option value="{{ lang.0 }}" style='border-radius:15px'>{{ lang.1 }}</option>
+                    {% endfor %}
+                    </select>
+                    <input type="submit" style='width:40px;line-height:20px;background:#444;margin-left:2px;border:2px solid #444;color:#3f6;font-weight:bold' value='Ok'/>
+                </form>
+            </div> 
             <header class='row'>
                 {% block header %}
                 <div class="col-md-4" >
@@ -45,7 +57,7 @@
                             <div class='row'>
                                 <div class='col-md-10 div_job'>
                                     <div class='row'>
-                                        <div class='col-md-4' id='experienced'>{% blocktrans %}The experienced{% endblocktrans %}</div>
+                                        <div class='col-md-4' id='experienced'>{% trans 'The experienced' %}</div>
                                         <div class='col-md-8' id='cadre'><span id='job'>{% trans 'Responsive' %}<span style='color: #424141'>i</span>Design</span></div>
                                     </div>
                                 </div>
@@ -58,7 +70,7 @@
 
                         <div class='col-md-12'>
                             <div class='row'>
-                                <a href='' class='col-md-2 nav_header2 nav1' data-toggle='popover' data-content='Just a few moments' title='PAGE NOT RIGHT YET' >
+                                <a href='{% url 'home_page'%}' class='col-md-2 nav_header2 nav1' data-toggle='popover' data-content='Just a few moments' title='PAGE NOT RIGHT YET' >
                                     <span class="fa fa-home fa-lg icons"></span><br/>{% trans 'HOME' %}
                                     <span class='nav1_span'> </span>
                                 </a>
@@ -67,12 +79,10 @@
                                         <div class="modal-content">
                                           <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal">x</button>
-                                            <h4 class="modal-title">{% blocktrans %}PAGE NOT RIGHT YET{% endblocktrans %}</h4>
+                                            <h4 class="modal-title">{% trans 'SORRY' %}</h4>
                                           </div>
                                           <div class="modal-body">
-                                            {% blocktrans %}
-                                            it will be rigth in few moments
-                                            {% endblocktrans %}
+                                              {% trans 'Page not right yet' %}
                                           </div>
                                           <div class="modal-footer">
                                             <button class="btn btn-info" data-dismiss="modal">Fermer</button>
@@ -82,10 +92,10 @@
                                     </div>
                                 <div class='col-md-2 dropdown'>
                                     <div class='row'>
-                                        <div href='{% url 'base' %}' class='col-md-12 nav_header2 nav2'>
+                                        <a href='{% url 'services_page' %}' class='col-md-12 nav_header2 nav2'>
                                             <span class="fa fa-cogs fa-lg icons"></span><br/>{% trans 'SERVICES' %}
                                             <span class='nav2_span'> </span>
-                                        </div>
+                                        </a>
 
                                         <!-- <div class='col-md-12 dropdown-content'> -->
                                         <!--     <div class='row'> -->
@@ -119,10 +129,10 @@
                                     </div>
                                 </div>
 
-                                <div href='{% url 'base' %}' class='col-md-2 nav_header2 nav4'>
+                                <a href='{% url 'contacts_page' %}' class='col-md-2 nav_header2 nav4'>
                                     <span class="fa fa-map-marker-alt fa-lg icons" ></span><br/>{% trans 'CONTACTS' context 'contacts' %}
                                     <span class='nav4_span'> </span>
-                                </div>
+                                </a>
 
                                 <div href='{% url 'base' %}' class='col-md-2 nav_header2 nav5'>
 									<span class="fa fa-shopping-cart fa-lg icons" ></span><br/>{% trans 'STORE' context 'store' %}
@@ -156,20 +166,19 @@
             {% endblock %}
             </header>
             <section class='row'>
+            {% block section %}
                 <!-- first part of the section -->
-                {% block section1 %}
                 <div class='col-md-12'>
-                    <div class='row'>
-                        <div class='col-md-8 section1'>
+                    <div class='row section1'>
+                    {% block section1 %}
+                        <div class='col-md-8'>
                             <div class='row'>
                                 <div class='col-md-12 serviceContent'>
                                     <p class='my_services'>
-                                    <strong>{% blocktrans %}My Services{% endblocktrans %}</strong><br>
+                                    <strong>{% trans 'My Services' %}</strong><br>
                                         <small class='service'>
-                                            {% blocktrans %}
-                                            website development and web applications, responsive design, SEO and optimization
-                                            of applications and website, e-commerce service, below are a few services I provide. 
-                                            {% endblocktrans %}
+                                            {% trans "website development and web applications, responsive design, SEO and optimization" %}
+                                            {% trans "of applications and website, e-commerce service, below are a few services I provide."%} 
                                         </small>
                                     </p>
                                 </div>
@@ -178,38 +187,32 @@
                                         <div class='col-md-4 serviceContent'>
                                             <p class='my_services2'>
                                             <span class='fa fa-object-group fa-3x' style='color: #B6FF17'></span>
-                                            <strong>{% blocktrans %}WEB APPLICATION{% endblocktrans %}</strong> <br><br>
-                                            {% blocktrans %}
-                                                I develop secure, fast and powerful
-                                                web2.0 applications for small business
-                                                simple and complex like pinterest and
-                                                bit bucket. 
-                                            {% endblocktrans %}
+                                            <strong>{% trans "WEB APPLICATION" %}</strong> <br><br>
+                                            {% trans 'I develop secure, fast and powerful' %}
+                                            {% trans 'web2.0 applications for small business' %}
+                                            {% trans  'simple and complex like pinterest and' %}
+                                            {% trans 'bit bucket.' %}
                                             </p>
                                         </div>
                                         <div class='col-md-4 serviceContent'>
                                             <p class='my_services2'>
-                                            <span class='fab fa-ello fa-3x' style='color: #B6FF17'></span>
-                                            <strong>{% blocktrans %}RESPONSIVE DESIGN{% endblocktrans %}</strong><br><br>
-                                            {% blocktrans %}
-                                                Nowadays unavoidable, I realize
-                                                sites and applications that 
-                                                automatically adapts to different
-                                                screen (desktop, tablet and smarphone)
-                                            {% endblocktrans %}
+                                            <span class='fas fa-crop fa-3x' style='color: #B6FF17'></span>
+                                            <strong>{% trans "RESPONSIVE DESIGN" %}</strong><br><br>
+                                                {% trans "Nowadays unavoidable, I realize" %}
+                                                {% trans "sites and applications that" %}
+                                                {% trans "automatically adapts to different" %}
+                                                {% trans "screen (desktop, tablet and smarphone)" %}
                                             </p>
                                         </div>
                                         <div class='col-md-4 serviceContent'>
                                             <p class='my_services2'>
                                             <span class='fa fa-shopping-cart fa-3x' style='color: #B6FF17'></span>
                                             <strong>{% trans 'E-COMMERCE' %}</strong><br><br>
-                                            {% blocktrans %}
-                                               Ecommerce, become a challenge and
-                                               a universe all expanding, I create
-                                               ecommerce website, my main activity
-                                               is the proposal of books in my blog
-                                               and more…
-                                            {% endblocktrans %}
+                                            {% trans "E-commerce, become a challenge and" %}
+                                            {% trans "a universe all expanding, I create" %}
+                                            {% trans "e-commerce website, my main activity" %}
+                                            {% trans "is the proposal of books in my blog" %}
+                                            {% trans "and more…" %}
                                             </p>
                                         </div>
                                         <div class='col-md-12' style='height: 30px'>
@@ -228,16 +231,16 @@
                             <div class='row personnal_infos'>
                                 <div class='col-md-12 sectionheight1'>
                                     <p  class='infos'>
-                                    <strong style='font-size: 1.8em'>{% blocktrans %}Personnal Infos{% endblocktrans %}</strong>
+                                    <strong style='font-size: 1.8em'>{% trans "Personnal Infos" %}</strong>
                                         <p class='infosContent'>
-                                            <p><span class='titre'>{% blocktrans %}Full name{% endblocktrans %}:</span> Alassane Yattara</p>
-                                            <p><span class='titre'>{% trans 'Age' %}:</span>  21{% trans 'years' %}</p>
+                                            <p><span class='titre'>{% trans "Full name" %}:</span> Alassane Yattara</p>
+                                            <p><span class='titre'>{% trans 'Age' %}:</span>  21 {% trans 'years' %}</p>
                                             <p id='addr'><span class='titre'>Address:</span> 2220, Oulfa, Arreda,
-                                                <p style='padding-left: 165px'>{% blocktrans %}Casablanca Marroco{% endblocktrans %}</p>
+                                                <p style='padding-left: 165px'>{% trans "Casablanca Marroco" %}</p>
                                             </p>
                                             <p><span class='titre'>{% trans 'Phone' %}:</span>  +212 603 39 08 98</p>
                                             <p><span class='titre'>{% trans 'Email' %}:</span> yattus50@gmail.com</p>
-                                            <p><span class='titre'>{% blocktrans %}Aviable-for {% endblocktrans %}:</span>{% blocktrans %} Freelance job {% endblocktrans %}</p>
+                                            <p><span class='titre'>{% trans "Aviable-for" %}:</span>{% trans "Freelance job" %}</p>
                                         </p>
                                     </p>
                                 </div>
@@ -250,13 +253,13 @@
                                 </div>
                             </div>
                         </div>
+                    {% endblock section1 %}
                     </div>
                 </div>
-                {% endblock section1 %}
                 <!-- Second part of the section -->
-                {% block section2 %}
                 <div class='col-md-12'>
-                    <div class='row'>
+                    <div class='row section2'>
+                    {% block section2 %}
                         <div class='col-md-4 my_schools'>
                             <div class='row'>
                                 <div class='col-md-12 schoolContent1'>
@@ -266,25 +269,25 @@
                                     <strong>Polytechnique</strong>
                                     <p class='education'>
                                         <em>09/2016 In progress...</em>
-                                        <small class='pull-right'>{% blocktrans %}University of study{% endblocktrans %}</small>
+                                        <small class='pull-right'>{% trans "University of study" %}</small>
                                     </p>
                                 </div>
                                 <div class='col-md-12 schoolContent'>
-                                    <strong>{% blocktrans %}Openclassrooms, CodeAcademy and Edx{% endblocktrans %}</strong>
+                                    <strong>{% trans "Openclassrooms, CodeAcademy and Edx" %}</strong>
                                     <p class='education'>
                                         <em>02/2016 In progress...</em>
                                         <small class='pull-right'>Study online</small>
                                     </p>
                                 </div>
                                 <div class='col-md-12 schoolContent'>
-                                    <strong>{% blocktrans %}Web Media Network «Traineeship»{% endblocktrans %}</strong>
+                                    <strong>{% trans "Web Media Network «Traineeship»" %}</strong>
                                     <p class='education'>
                                         <em>07/2017 - 08/2017</em>
                                         <small class='pull-right'>{% trans 'Web-Agency' %}</small>
                                     </p>
                                 </div>
                                 <div class='col-md-12 schoolContent'>
-                                    <strong>{% blocktrans %}Digital Agency «Traineeship»{% endblocktrans %}</strong>
+                                    <strong>{% trans "Digital Agency «Traineeship»" %}</strong>
                                     <p class='education'>
                                         <em>06/2018 - 08/2018</em>
                                         <small class='pull-right'>{% trans 'Web-Agency' %}</small>
@@ -303,7 +306,7 @@
                             <div class='row'>
                             
                                 <div class='col-md-12 schoolContent1'>
-                                    <strong>{% blocktrans %}Professional Skills{% endblocktrans %}</strong>
+                                    <strong>{% trans "Professional Skills" %}</strong>
                                 </div>
                                 <div class='col-md-12'>
                                     <div class='row'>
@@ -382,13 +385,13 @@
                                 </div>
                             </div>
                         </div>
+                    {% endblock section2 %}
                     </div>
                 </div>
-                {% endblock section2 %}
                 <!-- third part of the section -->
-                {% block section3 %}
                 <div class='col-md-13'>
                     <div class='row'>
+                    {% block section3 %}
                         <div class='col-md-12 my_framework'>
                             <div class='row'>
                                 <div class='col-md-2 sectionheight3'>
@@ -416,24 +419,25 @@
                                 </div>
                             </div>
                         </div>
+                    {% endblock section3 %}
                     </div>
                </div>
-               {% endblock section3 %}
+            {% endblock section %}
             </section>
             <footer class='row'>
             {% block footer %}
                 <div class='col-md-3 '>
                     <div class='row'>
                         <div class='col-md-12 footerheight1'>
-                            <strong>{% blocktrans %}ALASSANE YATTARA{% endblocktrans %}</strong>
+                            <strong>ALASSANE YATTARA</strong>
                         </div>
                         <div class='col-md-12 footerheight2'>
                             <div class='row'>
                                 <p class='col-md-3 image'><img src="../../static/monCV/img/photo.jpg" alt="photo Developper freelance"></p>
                                 <div class='col-md-9 detail'>
                                     <p>
-                                        {% blocktrans %}Web application back-end end front
-                                        end, Responsive design, SEO and more...{% endblocktrans %}
+                                    {% trans "Web application back-end end front" %}
+                                    {% trans "end, Responsive design, SEO and more..." %}
                                     </p>
                                 </div>
                             </div>
@@ -443,13 +447,13 @@
                 <div class='col-md-3 '>
                     <div class='row'>
                         <div class='col-md-12 footerheight1'>
-                            <strong>{% blocktrans %}MORE ABOUT ME{% endblocktrans %}</strong>
+                            <strong>{% trans "MORE ABOUT ME" %}</strong>
                         </div>
                         <div class='col-md-12 footerheight2'>
                             <p>
-                                {% blocktrans %}I'm student in computer ingeneer, living in Casablanca, morroco                                
-                                passionat in web developpement and programming, I make web applications
-                                and I create beautiful functional websites for small business, usually with{% endblocktrans %}
+                            {% trans "I'm student in computer ingeneer, living in Casablanca, morroco " %}
+                            {% trans "passionat in web developpement and programming, I make web applications" %}
+                            {% trans "and I create beautiful functional websites for small business, usually with" %}
                                 <span style='color:#f55'>DJANGO</span>.
                             </p>
                         </div>
@@ -458,7 +462,7 @@
                 <div class='col-md-3 '>
                     <div class='row'>
                         <div class='col-md-12 footerheight1'>
-                            <strong>{% blocktrans %}FIND MY INFO{% endblocktrans %}</strong>
+                            <strong>{% trans "FIND MY INFO" %}</strong>
                         </div>
                         <div class='col-md-12 footerheight2'>
                           <form class="form-inline" style="background-color: white; line-height:40px; width:242px">
@@ -471,7 +475,7 @@
                 <div class='col-md-3 '>
                     <div class='row'>
                         <div class='col-md-12 footerheight1'>
-                            <strong>{% blocktrans %}STAY CONNECTED{% endblocktrans %}</strong>
+                            <strong>{% trans "STAY CONNECTED" %}</strong>
                         </div>
                         <div class='col-md-12 footerheight2'>
                             <div class='row'>
@@ -479,17 +483,7 @@
                                 <a href="{% url 'base' %}" class='col-md-1' id='reseau'><span class="fab fa-google-plus-g fa-lg"></span></a>
                                 <a href="{% url 'base' %}" class='col-md-1' id='reseau'><span class="fab fa-instagram fa-lg"></span></a>
                                 <a href="{% url 'base' %}" class='col-md-1' id='reseau'><span class="fab fa-twitter fa-lg"></span></a>
-                                <form action="/i18n/setlang/" method="post" class='col-md-1' style='color:white'>
-                                    {% csrf_token %}
-                                    <input name="next" type="hidden" value="." />
-                                    <select name="language">
-                                    {% for lang in LANGUAGES %}
-                                        <option value="{{ lang.0 }}">{{ lang.1 }}</option>
-                                    {% endfor %}
-                                    </select>
-                                    <input type="submit" />
-                                </form>
-                            </div>
+                           </div>
                         </div>
                     </div>
                     </div>
@@ -502,7 +496,7 @@
     {% bootstrap_javascript jquery=1 %}
     <script src='{% static 'monCV/js/ExperienceAnimation.js' %}'></script>
     <script>
-        $('.nom_icon, .nav2, .nav3, .nav4, .nav5, .nav6').click(function() {
+        $('.nom_icon, .nav3, .nav5, .nav6').click(function() {
           $('.modal').modal('show');
         });
     </script>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-12 23:50+0000\n"
+"POT-Creation-Date: 2018-08-14 23:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,235 +18,250 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: monSite/settings.py:140
-msgid "French"
-msgstr ""
-
-#: monSite/settings.py:141
-msgid "English"
-msgstr ""
-
 #. Translators: Titre la page
-#: templates/base.html:15
+#: monCV/templates/monCV/contacts_page.html:14
+#: monCV/templates/monCV/services_page.html:14 templates/base.html:15
 msgid "Freelance Developper"
 msgstr ""
 
-#: templates/base.html:48
+#: monSite/settings.py:140
+msgid "French"
+msgstr "français"
+
+#: monSite/settings.py:141
+msgid "English"
+msgstr "Anglais"
+
+#: templates/base.html:60
 msgid "The experienced"
 msgstr ""
 
-#: templates/base.html:49
+#: templates/base.html:61
 msgid "Responsive"
 msgstr ""
 
-#: templates/base.html:62
+#: templates/base.html:74
 msgid "HOME"
 msgstr ""
 
-#: templates/base.html:70
-msgid "PAGE NOT RIGHT YET"
+#: templates/base.html:82
+msgid "SORRY"
 msgstr ""
 
-#: templates/base.html:73
-msgid ""
-"\n"
-"                                            it will be rigth in few moments\n"
-"                                            "
+#: templates/base.html:85
+msgid "Page not right yet"
 msgstr ""
 
-#: templates/base.html:86
+#: templates/base.html:96
 msgid "SERVICES"
 msgstr ""
 
-#: templates/base.html:104
+#: templates/base.html:114
 msgctxt "portofolio"
 msgid "PORTOFOLIO"
 msgstr ""
 
-#: templates/base.html:123
+#: templates/base.html:133
 msgctxt "contacts"
 msgid "CONTACTS"
 msgstr ""
 
-#: templates/base.html:128
+#: templates/base.html:138
 msgctxt "store"
 msgid "STORE"
 msgstr ""
 
-#: templates/base.html:135
+#: templates/base.html:145
 msgctxt "blog"
 msgid "BLOG"
 msgstr ""
 
-#: templates/base.html:167
+#: templates/base.html:178
 msgid "My Services"
-msgstr "Mes Services"
+msgstr ""
 
-#: templates/base.html:169
+#: templates/base.html:180
 msgid ""
-"\n"
-"                                            website development and web "
-"applications, responsive design, SEO and optimization\n"
-"                                            of applications and website, e-"
-"commerce service, below are a few services I provide. \n"
-"                                            "
+"website development and web applications, responsive design, SEO and "
+"optimization"
 msgstr ""
 
 #: templates/base.html:181
+msgid ""
+"of applications and website, e-commerce service, below are a few services I "
+"provide."
+msgstr ""
+
+#: templates/base.html:190
 msgid "WEB APPLICATION"
 msgstr ""
 
-#: templates/base.html:182
-msgid ""
-"\n"
-"                                                I develop secure, fast and "
-"powerful\n"
-"                                                web2.0 applications for "
-"small business\n"
-"                                                simple and complex like "
-"pinterest and\n"
-"                                                bit bucket. \n"
-"                                            "
+#: templates/base.html:191
+msgid "I develop secure, fast and powerful"
+msgstr ""
+
+#: templates/base.html:192
+msgid "web2.0 applications for small business"
 msgstr ""
 
 #: templates/base.html:193
-msgid "RESPONSIVE DESIGN"
+msgid "simple and complex like pinterest and"
 msgstr ""
 
 #: templates/base.html:194
-msgid ""
-"\n"
-"                                                Nowadays unavoidable, I "
-"realize\n"
-"                                                sites and applications "
-"that \n"
-"                                                automatically adapts to "
-"different\n"
-"                                                screen (desktop, tablet and "
-"smarphone)\n"
-"                                            "
-msgstr ""
+msgid "bit bucket."
+msgstr "bit bucket"
 
-#: templates/base.html:205
+#: templates/base.html:200
+msgid "RESPONSIVE DESIGN"
+msgstr "RESPONSIVE DESIGN"
+
+#: templates/base.html:201
+msgid "Nowadays unavoidable, I realize"
+msgstr "Nowadays unavoidable, I realize"
+
+#: templates/base.html:202
+msgid "sites and applications that"
+msgstr "sites and applications that"
+
+#: templates/base.html:203
+msgid "automatically adapts to different"
+msgstr "automatically adapts to differen"
+
+#: templates/base.html:204
+msgid "screen (desktop, tablet and smarphone)"
+msgstr "screen (desktop, tablet and smarphone)"
+
+#: templates/base.html:210
 msgid "E-COMMERCE"
-msgstr ""
+msgstr "E-COMMERCE"
 
-#: templates/base.html:206
-msgid ""
-"\n"
-"                                               Ecommerce, become a challenge "
-"and\n"
-"                                               a universe all expanding, I "
-"create\n"
-"                                               ecommerce website, my main "
-"activity\n"
-"                                               is the proposal of books in "
-"my blog\n"
-"                                               and more…\n"
-"                                            "
-msgstr ""
+#: templates/base.html:211
+msgid "E-commerce, become a challenge and"
+msgstr "E-commerce, become a challenge and"
 
-#: templates/base.html:231
+#: templates/base.html:212
+msgid "a universe all expanding, I create"
+msgstr "a universe all expanding, I create"
+
+#: templates/base.html:213
+msgid "e-commerce website, my main activity"
+msgstr "e-commerce website, my main activity"
+
+#: templates/base.html:214
+msgid "is the proposal of books in my blog"
+msgstr "is the proposal of books in my blog"
+
+#: templates/base.html:215
+msgid "and more…"
+msgstr "and more…"
+
+#: templates/base.html:234
 msgid "Personnal Infos"
-msgstr ""
-
-#: templates/base.html:233
-msgid "Full name"
-msgstr ""
-
-#: templates/base.html:234
-msgid "Age"
-msgstr ""
-
-#: templates/base.html:234
-msgid "years"
-msgstr ""
+msgstr "Personnal Info"
 
 #: templates/base.html:236
-msgid "Casablanca Marroco"
-msgstr ""
+msgid "Full name"
+msgstr "Full name"
 
-#: templates/base.html:238
-msgid "Phone"
-msgstr ""
+#: templates/base.html:237
+msgid "Age"
+msgstr "Age"
+
+#: templates/base.html:237
+msgid "years"
+msgstr "years"
 
 #: templates/base.html:239
+msgid "Casablanca Marroco"
+msgstr "Casablanca Marroco"
+
+#: templates/base.html:241
+msgid "Phone"
+msgstr "Phone"
+
+#: templates/base.html:242
 msgid "Email"
+msgstr "Email"
+
+#: templates/base.html:243
+msgid "Aviable-for"
+msgstr "Aviable-for"
+
+#: templates/base.html:243
+msgid "Freelance job"
 msgstr ""
 
-#: templates/base.html:240
-msgid "Aviable-for "
-msgstr ""
-
-#: templates/base.html:240
-msgid " Freelance job "
-msgstr ""
-
-#: templates/base.html:263
+#: templates/base.html:266
 msgid "Education"
-msgstr ""
+msgstr "Education"
 
-#: templates/base.html:269
+#: templates/base.html:272
 msgid "University of study"
-msgstr ""
+msgstr "University of study"
 
-#: templates/base.html:273
+#: templates/base.html:276
 msgid "Openclassrooms, CodeAcademy and Edx"
-msgstr ""
+msgstr "Openclassrooms, CodeAcademy and Edx"
 
-#: templates/base.html:280
+#: templates/base.html:283
 msgid "Web Media Network «Traineeship»"
-msgstr ""
+msgstr "Web Media Network «Traineeship»"
 
-#: templates/base.html:283 templates/base.html:290
+#: templates/base.html:286 templates/base.html:293
 msgid "Web-Agency"
-msgstr ""
+msgstr "Web-Agency"
 
-#: templates/base.html:287
+#: templates/base.html:290
 msgid "Digital Agency «Traineeship»"
-msgstr ""
+msgstr "Digital Agency «Traineeship»"
 
-#: templates/base.html:306
+#: templates/base.html:309
 msgid "Professional Skills"
-msgstr ""
+msgstr "Professional Skills"
 
-#: templates/base.html:313
+#: templates/base.html:316
 msgid "Design"
-msgstr ""
+msgstr "Design"
 
-#: templates/base.html:428
-msgid "ALASSANE YATTARA"
-msgstr ""
+#: templates/base.html:439
+msgid "Web application back-end end front"
+msgstr "Web application back-end end front"
 
-#: templates/base.html:435
-msgid ""
-"Web application back-end end front\n"
-"                                        end, Responsive design, SEO and "
-"more..."
-msgstr ""
-
-#: templates/base.html:446
-msgid "MORE ABOUT ME"
-msgstr ""
+#: templates/base.html:440
+msgid "end, Responsive design, SEO and more..."
+msgstr "end, Responsive design, SEO and more..."
 
 #: templates/base.html:450
+msgid "MORE ABOUT ME"
+msgstr "MORE ABOUT ME"
+
+#: templates/base.html:454
+msgid "I'm student in computer ingeneer, living in Casablanca, morroco "
+msgstr "I'm student in computer ingeneer, living in Casablanca, morroco "
+
+#: templates/base.html:455
+msgid "passionat in web developpement and programming, I make web applications"
+msgstr ""
+"passionat in web developpement and programming, I make web applications"
+
+#: templates/base.html:456
 msgid ""
-"I'm student in computer ingeneer, living in Casablanca, "
-"morroco                                \n"
-"                                passionat in web developpement and "
-"programming, I make web applications\n"
-"                                and I create beautiful functional websites "
-"for small business, usually with"
+"and I create beautiful functional websites for small business, usually with"
 msgstr ""
+"and I create beautiful functional websites for small business, usually with"
 
-#: templates/base.html:461
+#: templates/base.html:465
 msgid "FIND MY INFO"
-msgstr ""
+msgstr "FIND MY INFO"
 
-#: templates/base.html:465 templates/base.html:466
+#: templates/base.html:469 templates/base.html:470
 msgid "Search"
-msgstr ""
+msgstr "Search"
 
-#: templates/base.html:474
+#: templates/base.html:478
 msgid "STAY CONNECTED"
-msgstr ""
+msgstr "STAY CONNECTED"
+
+#~ msgid "PAGE NOT RIGHT YET"
+#~ msgstr "Page en construction"

@@ -23,4 +23,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^monCV/', include('monCV.urls')),
     url(r'^$', TemplateView.as_view(template_name='base.html'), name='base'),
+
+    url(r'^i18n/', include("django.conf.urls.i18n"), name='i18n'),
 ]

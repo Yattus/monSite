@@ -416,7 +416,7 @@ header img{
 }
 
 .nav4{
-    background-color: #e74c3c;
+    background-color: #E77;
 }
 .nav4_span {
     background-color: rgba(11,83,69,0.4);
@@ -490,10 +490,13 @@ header img{
     height: 10px;
 }
 
-/* Background section service */
+/* Background section 1 et 2  */
 .section1{
-    /* background-color:  #aed6f1; */
     background-color: white;
+}
+
+.section2{
+    background-color: #eee;
 }
 
 /* My service */
@@ -525,7 +528,7 @@ header img{
 .my_services2{
     font-family: 'open_sanslight', 'cac_champagneregular', 'open_sansitalic', sans-serif, Verdana, Arial, "Arial Black", Impact;
     padding-left: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .my_schools {
@@ -539,7 +542,7 @@ header img{
 .my_framework{
     margin-top: 5px;
     margin-bottom: 5px;
-    /* background-color: #aed6f1; */
+    background-color: #aaa;
 }
 
 footer{

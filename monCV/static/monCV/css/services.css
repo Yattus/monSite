@@ -1,0 +1,41 @@
+.Sheader{
+    line-height:150px;
+    background:#3498db;
+}
+
+.Ssection1 {
+    background-color: white;
+}
+
+.offre {
+    margin-top: 150px
+}
+
+.Ssection2 {
+    padding-bottom: 150px;
+    padding-top: 100px;
+    background-color: white;
+}
+
+.icons{
+    line-height: 200px;
+}
+
+.expe {
+    line-height:60px;
+    font-family: 'open_sanslight', 'cac_champagneregular', 'open_sansitalic', sans-serif, Verdana, Arial, "Arial Black", Impact;
+}
+
+.description{
+    line-height: 150px;
+} 
+
+.S2section2 {
+    display:flex;
+    justify-content:space-around;
+}
+
+.S2section2 div {
+   line-height: 600px; 
+   background: white;
+}

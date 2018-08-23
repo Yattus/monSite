@@ -1,1 +1,192 @@
 {% extends 'base.html' %}
+
+{% block head %}
+    {% load bootstrap3 %}
+    {% load static %}
+    {% load i18n %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "monCV/css/monCV2.css" %}">
+    <link rel="stylesheet" href="{% static "monCV/css/services.css" %}">
+    {% bootstrap_css %}
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% comment %} Translators: Titre la page {% endcomment %}
+    <title>{% trans 'Freelance Developper' %}</title>
+{% endblock %}
+
+
+{% block section1 %}
+    <div class="col-md-12 Sheader"> 
+        Services
+    </div>
+    <div class="col-md-12 Ssection1">
+        <div class="row">
+            <div class="col-md-12 offre">    
+                <h2>We offers</h2>
+            </div>
+            <div class="col-md-offset-2 col-md-8 offreContent">
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id metus
+                purus. Ut vulputate, est vel tincidunt mattis, orci neque iaculis 
+                lectus, et interdum quam felis vel tortor.
+                </h5>            
+            <div>
+        </div>
+    </div>
+    <div class="col-md-12 Ssection2">
+        <div class="row">
+            <div class="col-md-4">
+                <div class='col-md-12'>
+                    <span class="fas fa-crop fa-4x" style='color:#7e7'></span><br/><h3 style='font-weight:bold'>{% trans 'Design' %}</h3>
+                </div>
+                <div class='col-md-12 expe'>
+                    <div class='col-md-offset-1 col-md-5' style='background-color:#66e;line-height:20px;border-radius:7px;margin-right:4px'>
+                        Web Design
+                    </div>
+                    <div class='col-md-5' style='background-color:#66e;line-height:20px;border-radius:7px'>
+                        3D Graphic
+                    </div>
+                    <div class='col-md-4' style='background-color:#66e;line-height:20px;border-radius:7px;margin:4px 4px 0 36px'>
+                        Visualisation
+                    </div>
+                    <div class='col-md-5' style='background-color:#66e;line-height:20px;border-radius:7px;margin-top:4px'>
+                        Other Magic
+                    </div>
+                </div>
+                <div class='col-md-12 description'>
+                    something
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class='col-md-12'>
+                    <span class="fas fa-crop fa-4x" style='color:#7e7'></span><br/><h3 style='font-weight:bold'>{% trans 'Development' %}</h3>
+                </div>
+                <div class='col-md-12 expe'>
+                    <div class='col-md-7' style='background-color:#66e;line-height:20px;border-radius:7px;margin:0 4px 0 -4px'>
+                        PYTHON Programming
+                    </div>
+                    <div class='col-md-5' style='background-color:#66e;line-height:20px;border-radius:7px'>
+                        Mobile apps
+                    </div>
+                    <div class='col-md-4' style='background-color:#66e;line-height:20px;border-radius:7px;margin:4px 4px 0px 25px'>
+                        Web apps
+                    </div>
+                    <div class='col-md-6' style='background-color:#66e;line-height:20px;border-radius:7px;margin-top:4px'>
+                        Interface Design
+                    </div>
+                </div>
+                <div class='col-md-12 description'>
+                    something
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class='col-md-12'>
+                    <span class="fas fa-crop fa-4x" style='color:#7e7'></span><br/><h3 style='font-weight:bold'>{% trans 'Marketing' %}</h3>
+                </div>
+                <div class='col-md-12 expe'>
+                    <div class='col-md-3' style='background-color:#66e;line-height:20px;border-radius:7px;margin:0 4px 0 40px'>
+                        SEO
+                    </div>
+                    <div class='col-md-5' style='background-color:#66e;line-height:20px;border-radius:7px'>
+                        Social Media
+                    </div>
+                    <div class='col-md-6' style='background-color:#66e;line-height:20px;border-radius:7px;margin:4px 4px 0 10px'>
+                        Email Marketing
+                    </div>
+                    <div class='col-md-5' style='background-color:#66e;line-height:20px;border-radius:7px;margin-top:4px'>
+                        Others Magic
+                    </div>
+                </div>
+                <div class='col-md-12 description'>
+                    something
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class='col-md-12'>
+                    <span class="fas fa-crop fa-4x" style='color:#7e7'></span><br/><h3 style='font-weight:bold'>{% trans 'Support' %}</h3>
+                </div>
+                <div class='col-md-12 expe'>
+                    <div class='col-md-4' style='background-color:#66e;line-height:20px;border-radius:7px;margin:0 4px 0'>
+                        Maintenance
+                    </div>
+                    <div class='col-md-7' style='background-color:#66e;line-height:20px;border-radius:7px'>
+                        advice and assistance
+                    </div>
+                    <div class='col-md-5' style='background-color:#66e;line-height:20px;border-radius:7px;margin:4px 4px 0'>
+                        User Manual
+                    </div>
+                    <div class='col-md-6' style='background-color:#66e;line-height:20px;border-radius:7px;margin-top:4px'>
+                        administration tools
+                    </div>
+                </div>
+                <div class='col-md-12 description'>
+                    something
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class='col-md-12'>
+                    <span class="fas fa-crop fa-4x" style='color:#7e7'></span><br/><h3 style='font-weight:bold'>{% trans 'ECommerce' %}</h3>
+                </div>
+                <div class='col-md-12 expe'>
+                    <div class='col-md-7' style='background-color:#66e;line-height:20px;border-radius:7px;margin:0 4px 0 -4px'>
+                        ECommerce Web apps
+                    </div>
+                    <div class='col-md-5' style='background-color:#66e;line-height:20px;border-radius:7px'>
+                        book reviews
+                    </div>
+                    <div class='col-md-5' style='background-color:#66e;line-height:20px;border-radius:7px;margin:4px 4px 0px 10px'>
+                        EC-Website
+                    </div>
+                    <div class='col-md-6' style='background-color:#66e;line-height:20px;border-radius:7px;margin-top:4px'>
+                        ECommerce SEO
+                    </div>
+                </div>
+                <div class='col-md-12 description'>
+                    something
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class='col-md-12'>
+                    <span class="fas fa-crop fa-4x" style='color:#7e7'></span><br/><h3 style='font-weight:bold'>{% trans 'Hosting' %}</h3>
+                </div>
+                <div class='col-md-12 expe'>
+                    <div class='col-md-5' style='background-color:#66e;line-height:20px;border-radius:7px;margin:0 4px 0 -4px'>
+                        Web Hosting
+                    </div>
+                    <div class='col-md-7' style='background-color:#66e;line-height:20px;border-radius:7px'>
+                        Business Web Hosting
+                    </div>
+                    <div class='col-md-6' style='background-color:#66e;line-height:20px;border-radius:7px;margin:4px 4px 0px 10px'>
+                        Wordpress Hosting
+                    </div>
+                    <div class='col-md-5' style='background-color:#66e;line-height:20px;border-radius:7px;margin-top:4px'>
+                        Virtual Hosting
+                    </div>
+                </div>
+                <div class='col-md-12 description'>
+                    something
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block section2 %}
+    <div class="col-md-12 S2section" style='line-height:200px'>
+        Prices
+        Our services run deep and are backed by over ten years of experience.
+    </div>
+    <div class="col-md-12">
+        <div class="row S2section2">
+            <div class="col-md-3">
+                something1
+            </div>
+            <div class="col-md-3">
+                something2
+            </div>
+            <div class="col-md-3">
+                something3
+            </div>
+        </div>
+    </div>
+{% endblock %}
