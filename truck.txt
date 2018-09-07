@@ -1,3 +1,8 @@
-1 mise en forme de zsh fleche
-2 sauvegarde de mon myspacevim config sur github
+2 sauvegarde de mon myspacevim config sur github ✗
+3 chercher c'est quoi npm pour npm install less ✗
+4 ranger un peu les contenu de les dossiers telechargema et ls autres ✗
+5 Recher comment ouvrir un ficheir html directement sur vim ✗
+6 Installer Ubuntu 18.04 ⚠
 
+7 add new utilisateur sur ssh
+8 personnaliser l'invite zsh ✗

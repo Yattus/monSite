@@ -47,7 +47,8 @@
                                     <span>Alex Yattara</span>
                                 </div>
                                 <div href='{% url 'base' %}' class='col-md-2 nom_icon'>
-                                    <span class="fa fa-shopping-cart fa-lg" ></span>
+                                    <span class="fa fa-shopping-cart fa-lg bicons"><span class="badge" id='badg'>0</span></span>
+                                    <!-- translation avec hover -->
                                     <span class='nom_icon_span'></span>
                                 </div>
                             </div>
@@ -63,6 +64,7 @@
                                 </div>
                                 <a href="#" class="col-md-2 job_icon">
                                     <span class="fas fa-download fa-lg"></span>
+                                    <!-- translation avec hover -->
                                     <span class='job_icon_span'></span>
                                 </a>
                             </div>
@@ -70,26 +72,26 @@
 
                         <div class='col-md-12'>
                             <div class='row'>
-                                <a href='{% url 'home_page'%}' class='col-md-2 nav_header2 nav1' data-toggle='popover' data-content='Just a few moments' title='PAGE NOT RIGHT YET' >
+                                <a href='{% url 'home_page'%}' class='col-md-2 nav_header2 nav1'>
                                     <span class="fa fa-home fa-lg icons"></span><br/>{% trans 'HOME' %}
                                     <span class='nav1_span'> </span>
                                 </a>
-                                    <div class="modal" id="infos">
-                                      <div class="modal-dialog">
-                                        <div class="modal-content">
-                                          <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal">x</button>
-                                            <h4 class="modal-title">{% trans 'SORRY' %}</h4>
-                                          </div>
-                                          <div class="modal-body">
-                                              {% trans 'Page not right yet' %}
-                                          </div>
-                                          <div class="modal-footer">
-                                            <button class="btn btn-info" data-dismiss="modal">Fermer</button>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
+                                    <!-- <div class="modal" id="infos"> -->
+                                    <!--   <div class="modal-dialog"> -->
+                                    <!--     <div class="modal-content"> -->
+                                    <!--       <div class="modal-header"> -->
+                                    <!--         <button type="button" class="close" data-dismiss="modal">x</button> -->
+                                    <!--         <h4 class="modal-title">{% trans 'SORRY' %}</h4> -->
+                                    <!--       </div> -->
+                                    <!--       <div class="modal-body"> -->
+                                    <!--           {% trans 'Page not right yet' %} -->
+                                    <!--       </div> -->
+                                    <!--       <div class="modal-footer"> -->
+                                    <!--         <button class="btn btn-info" data-dismiss="modal">Fermer</button> -->
+                                    <!--       </div> -->
+                                    <!--     </div> -->
+                                    <!--   </div> -->
+                                    <!-- </div> -->
                                 <div class='col-md-2 dropdown'>
                                     <div class='row'>
                                         <a href='{% url 'services_page' %}' class='col-md-12 nav_header2 nav2'>
@@ -110,10 +112,10 @@
 
                                 <div class='col-md-2 dropdown'>
                                     <div class='row'>
-                                        <div href='{% url 'base' %}' class='col-md-12 nav_header2 nav3'>
+                                        <a href='{% url 'portofolio_page' %}' class='col-md-12 nav_header2 nav3'>
                                             <span class="fa fa-briefcase fa-lg icons" ></span><br/>{% trans 'PORTOFOLIO' context 'portofolio' %}
                                             <span class='nav3_span'> </span>
-                                        </div>
+                                        </a>
                                         <!-- <div class='col-md-12 dropdown-content'> -->
                                         <!--     <div class='row'> -->
                                             <!--         <a href='{% url 'base' %}' class='col-md-12 nav_header2 nav3'> -->
@@ -134,17 +136,17 @@
                                     <span class='nav4_span'> </span>
                                 </a>
 
-                                <div href='{% url 'base' %}' class='col-md-2 nav_header2 nav5'>
+                                <a href='{% url 'store_page' %}' class='col-md-2 nav_header2 nav5'>
 									<span class="fa fa-shopping-cart fa-lg icons" ></span><br/>{% trans 'STORE' context 'store' %}
                                     <span class='nav5_span'> </span>
-                                </div>
+                                </a>
 
                                 <div class='col-md-2 dropdown'>
                                     <div class='row'>
-                                        <div href='{% url 'base' %}' class='col-md-12 nav_header2 nav6 desable'>
+                                        <a href='{% url 'blog_page' %}' class='col-md-12 nav_header2 nav6 desable'>
                                             <span class="fab fa-blogger-b fa-lg icons" ></span><br/>{% trans 'BLOG' context 'blog' %}
                                             <span class='nav6_span'> </span>
-                                        </div>
+                                        </a>
                                         <!-- <div class='col-md-12 dropdown-content'> -->
                                         <!--     <div class='row'> -->
                                             <!--         <a href='{% url 'base' %}' class='col-md-12 nav_header2 nav6'> -->
@@ -492,9 +494,12 @@
         </div>
     {% endblock container %}
     </div>
-    {% bootstrap_messages %}
-    {% bootstrap_javascript jquery=1 %}
-    <script src='{% static 'monCV/js/ExperienceAnimation.js' %}'></script>
+
+    {% block script %}
+        {% bootstrap_messages %}
+        {% bootstrap_javascript jquery=1 %}
+        <script src='{% static 'monCV/js/ExperienceAnimation.js' %}'></script>
+    {% endblock script %}
     <script>
         $('.nom_icon, .nav3, .nav5, .nav6').click(function() {
           $('.modal').modal('show');

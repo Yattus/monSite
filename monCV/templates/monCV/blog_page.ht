@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type='text/css' href="{% static "monCV/css/monCV2.css" %}">
-    <link rel="stylesheet/less" type='text/css' href="{% static "monCV/css/portofolio.less" %}">
+    <link rel="stylesheet/less" type='text/css' href="{% static "monCV/css/blog_page.less" %}">
     {% bootstrap_css %}
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,7 +19,7 @@
 {% block section1 %}
     <div class='col-md-12 Sheader1'>
         <p class='my_Sheader1'>
-        <strong>{% trans 'Store' %}</strong><br>
+        <strong>{% trans 'Mon blog' %}</strong><br>
             <small class='Sheader1Content'>
                 {% trans "website development and web applications, responsive design, SEO and optimization" %}
                 {% trans "of applications and website, e-commerce service, below are a few services I provide."%} 
@@ -28,19 +28,8 @@
     </div>
     
     <div class="col-md-12 Sheader2"></div>
-    <div class="col-md-12 Ssection1">
-        <div class="row">
-            <div class="col-md-12 offre">
-				<h1 class="section-header"><span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">No Content</span></h1>
-            </div>
-            <div class="col-md-offset-2 col-md-8 offreContent">
-                <h5>
-                </h5>
-            <div>
-        </div>
-    </div>
-{% endblock %}
 
+{% endblock section1 %}
 
 {% block script %}
 

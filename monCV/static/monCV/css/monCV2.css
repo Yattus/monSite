@@ -71,7 +71,7 @@ body{
 }
 
 [class*='col-'], footer{
-    border: 1px solid black;
+    /* border: 2px solid black; */
     text-align: center;
     /* background-color: lightgreen; */
     /* line-height: 70px; */
@@ -149,6 +149,20 @@ header img{
     line-height: 120px;
     overflow: hidden;
     color: grey;
+}
+
+/* bicons: pour icons shooping avec badge */
+.bicons{
+    position:relative;
+    display:inline-block;
+}
+
+/* le badge de shooping */
+#badg {
+    color:#E77;
+    position:absolute;
+    top: -16px;
+    right: -18px;
 }
 
 /* Transition propriété */
@@ -503,7 +517,6 @@ header img{
 .serviceContent{
     height: 185px;
     text-align: left;
-    padding-left: 15px;
 }
 
 .my_services{

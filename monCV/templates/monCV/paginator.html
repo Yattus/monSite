@@ -1,0 +1,42 @@
+<hr>
+<div class="pagination">
+    <div class="pager">
+       {% if liste.has_previous %}
+            <li class="previous">
+                <a href="{% url 'view' liste.previous_page_number %}">&larr; Newer</a>
+            </li>
+       {% endif %}
+
+   <span class="current">
+       Page {{ liste.number }} sur {{ liste.paginator.num_pages }}
+   </span>
+
+	<div class="container">
+	  <ul class="pagination">
+		{% for nb in range(5) %}
+			{% if nb==3 %}
+				<li style="background-color:#ddd"><a href="#">nb</a></li>
+            {% else %}
+				<li><a href="#">nb</a></li>
+            {% endif %}
+		{% endfor %}
+	  </ul>
+	</div>
+
+       {% if liste.has_next %}
+            <li class="next">
+                <a href="{% url 'view' liste.previous_page_number %}">Older &rarr;</a>
+            </li>
+       {% endif %}
+    </div>
+</div>
+
+<ul class="pager">
+    <li class="previous">
+        <a href="{% url 'view' liste.previous_page_number %}">&larr; Older</a>
+    </li>
+</ul>
+<ul class="pager">
+</ul>
+
+

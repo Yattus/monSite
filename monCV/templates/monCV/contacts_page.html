@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static "monCV/css/monCV2.css" %}">
-    <link rel="stylesheet" href="{% static "monCV/css/contactsforms.css" %}">
+    <link rel="stylesheet/less" href="{% static "monCV/css/contactsforms.less" %}">
     <link rel="stylesheet" href="{% static "monCV/css/MesInfos.css" %}">
     {% bootstrap_css %}
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -26,17 +26,25 @@
 
 
 {% block section1 %}
-    <div class="col-md-12" style='background: #E77;color:white; line-height:158px'>
-        CONTACTS color
+    <div class='col-md-12 Sheader1'>
+        <p class='my_Sheader1'>
+        <strong>{% trans 'Contacts' %}</strong><br>
+            <small class='Sheader1Content'>
+                {% trans "website development and web applications, responsive design, SEO and optimization" %}
+                {% trans "of applications and website, e-commerce service, below are a few services I provide."%} 
+            </small>
+        </p>
     </div>
+    
+   <div class="col-md-12 Sheader2"></div>
 
 <!------ Include the above in your HEAD tag ---------->
   
 <section class="col-md-12" id="contact">
     <div class="row">
 			<div class="section-content col-md-12">
-				<h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us</span></h1>
-				<h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
+				<h1 class="section-header"><span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">Contacts us</span></h1>
+				<h3>Contactez-nous afin d’étudier ensemble votre besoin.</h3>
 			</div>
 			<div class="contact-section">
 			<div class="container col-md-12">
@@ -59,7 +67,7 @@
 			  		<div class="col-md-6">
 					  	<div class="form-group">
 					    	<label for="telephone"> Subject</label>
-					    	<input type="tel" class="form-control" id="telephone" placeholder=" Enter 10-digit mobile no.">
+					    	<input type="tel" class="form-control" id="telephone" placeholder=" Offre d'emploi à plein temps,  Offre d'emploi,  demandez devis ">
 			  			</div>
 			  			<div class="form-group">
 			  				<label for ="description"> Message</label>
@@ -97,3 +105,13 @@
 {% block section2 %}
         <img class='col-md-13' src="{% static "monCV/img/map.png" %}" alt="photo freelance Developper" style='display:block;height:500px;width:100%;margin-bottom:80px'>
 {% endblock %}
+
+
+{% block script %}
+
+    {% bootstrap_messages %}
+    {% bootstrap_javascript jquery=1 %}
+    <script src='{% static 'monCV/js/ExperienceAnimation.js' %}'></script>
+    <script src="{% static 'monCV/dist/less.js' %}" type='text/javascript'>
+
+{% endblock script %}
