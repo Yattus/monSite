@@ -504,7 +504,6 @@ header img{
     height: 10px;
 }
 
-/* Background section 1 et 2  */
 .section1{
     background-color: white;
 }
@@ -553,8 +552,6 @@ header img{
 }
 
 .my_framework{
-    margin-top: 5px;
-    margin-bottom: 5px;
     background-color: #aaa;
 }
 

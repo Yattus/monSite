@@ -17,6 +17,7 @@
 
 
 {% block section1 %}
+    <!-- premier partie du triangle coloré en blue -->
     <div class='col-md-12 Sheader1'>
         <p class='my_Sheader1'>
         <strong>{% trans 'Store' %}</strong><br>
@@ -27,11 +28,13 @@
         </p>
     </div>
     
+    <!-- second partie du triangle : c'est transparent -->
     <div class="col-md-12 Sheader2"></div>
+
     <div class="col-md-12 Ssection1">
         <div class="row">
             <div class="col-md-12 offre">
-				<h1 class="section-header"><span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">No Content</span></h1>
+				<h1 class="section-header"><span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">No products to sell</span></h1>
             </div>
             <div class="col-md-offset-2 col-md-8 offreContent">
                 <h5>
@@ -39,6 +42,11 @@
             <div>
         </div>
     </div>
+{% endblock %}
+
+
+{% block section2 %}
+
 {% endblock %}
 
 

@@ -167,6 +167,8 @@
                 </div>
             {% endblock %}
             </header>
+
+            <!-- Corps de la page -->
             <section class='row'>
             {% block section %}
                 <!-- first part of the section -->
@@ -390,42 +392,36 @@
                     {% endblock section2 %}
                     </div>
                 </div>
+
                 <!-- third part of the section -->
-                <div class='col-md-13'>
-                    <div class='row'>
+                <div class='col-md-12'>
+                    <div class='row my_framework w3-dark-grey'>
                     {% block section3 %}
-                        <div class='col-md-12 my_framework'>
-                            <div class='row'>
                                 <div class='col-md-2 sectionheight3'>
                                         <img class='col-md-13 django' src='../../static/monCV/img/frame/logo.png' alt="Photo framework" >
                                 </div>
                                 <div class='col-md-2 sectionheight3'>
-
                                         <img class='col-md-13 bootstrap' src='../../static/monCV/img/frame/bootstrap-inv2.png' alt="Photo framework" >
                                 </div>
                                 <div class='col-md-2 sectionheight3'>
-
                                         <img class='col-md-13 html' src='../../static/monCV/img/frame/html-inv.png' alt="Photo framework" >
                                 </div>
                                 <div class='col-md-2 sectionheight3'>
-
                                         <img class='col-md-13 css' src='../../static/monCV/img/frame/css-inv4.png' alt="Photo framework" >
                                 </div>
                                 <div class='col-md-2 sectionheight3'>
-
                                         <img class='col-md-13 jquery' src='../../static/monCV/img/frame/jquery-inv2.png' alt="Photo framework" >
                                 </div>
                                 <div class='col-md-2 sectionheight3'>
-
                                         <img class='col-md-13 python' src='../../static/monCV/img/frame/wordpress-inv2.png' alt="Photo framework" >
                                 </div>
-                            </div>
-                        </div>
                     {% endblock section3 %}
                     </div>
-               </div>
+                </div>
+
             {% endblock section %}
             </section>
+
             <footer class='row'>
             {% block footer %}
                 <div class='col-md-3 '>

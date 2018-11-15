@@ -6,3 +6,4 @@
 
 7 add new utilisateur sur ssh
 8 personnaliser l'invite zsh ✗
+9 personnaliser les commands vi-mode de zsh
